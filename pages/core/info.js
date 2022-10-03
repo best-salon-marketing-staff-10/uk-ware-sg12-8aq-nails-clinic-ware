@@ -12,41 +12,41 @@
 
 const thongTinTiem1 = {
     // Thông tin cơ bản của tiệm
-    tenTiem : "Diva Nails Exeter",
-    addressTiemLine1 : "22 Cowick Street",
-    areaTiem : "Exeter",
-    districtTiem :"Exeter",
-    cityTiem : "Exeter",
-    postcodeTiem : "EX4 1AL",
+    tenTiem : "Amazing Nails Widnes",
+    addressTiemLine1 : "3 Albert Square Shopping Centre",
+    areaTiem : "Widnes",
+    districtTiem :"Widnes",
+    cityTiem : "Widnes",
+    postcodeTiem : "WA8 6JW",
     countryTiem : "United Kingdom",
   
-    phoneTiem : "01392 499232",
+    phoneTiem : "01512577486",
     
-    linkBookingMapTiem : "https://bit.ly/3y9c9dm",
-    linkToMapTiem:"https://g.page/r/CZpCHCEWscvvEBA",
-    linkAppBookingTiem: "",
+    linkBookingMapTiem : "https://bit.ly/3LTkB5F",
+    linkToMapTiem:"https://goo.gl/maps/jAGMuXEKr64kYLjZ8",
+    linkAppBookingTiem: "https://amazingnailswidnes0914.setmore.com/",
   
-    geoPositionContent : "50.7169990792343, -3.5399097627067366",
-    geoRegionContent : "GB-BIR",
+    geoPositionContent : "53.36819711172669, -2.7266736622650267",
+    geoRegionContent : "GB-HAL",
   
-    websiteTiem:"https://diva-nails-exeter.web.app",
+    websiteTiem:"",
   
       //Thời gian làm việc của tiệm
-      workingTimeMon : "Monday: 09:00–19:00",
-      workingTimeTue : "Tuesday: 09:00–19:00",
-      workingTimeWed : "Wednesday: 09:00–19:00",
-      workingTimeThu : "Thursday: 09:00–19:00",
-      workingTimeFri : "Friday: 09:00–19:00",
-      workingTimeSat : "Saturday: 09:00–19:00",
+      workingTimeMon : "Monday: 09:00–18:30",
+      workingTimeTue : "Tuesday: 09:00–18:30",
+      workingTimeWed : "Wednesday: 09:00–18:30",
+      workingTimeThu : "Thursday: 09:00–18:30",
+      workingTimeFri : "Friday: 09:00–18:30",
+      workingTimeSat : "Saturday: 09:00–18:30",
       workingTimeSun : "Sunday: closed",
   
       //iframe map
-    iframeMapLink : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.031406205251!2d-3.539320333558971!3d50.716999164273375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xefcbb116211c429a!2sDiva%20nails%20%26%20spa!5e0!3m2!1sen!2suk!4v1658378056188!5m2!1sen!2suk",
+    iframeMapLink : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148.7881075095563!2d-2.726634099683556!3d53.368139297429174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b1ddf6386b3bd%3A0x798a7df4decd4e16!2sAmazing%20Nails%20Widnes!5e0!3m2!1svi!2s!4v1664342267669!5m2!1svi!2s",
   
       // Các ảnh của tiệm
-    ogImage:"https://i.ibb.co/3MBn7xy/og-image.jpg",
+    ogImage:"https://i.ibb.co/j8PB9yz/og-image.jpg",
     icon:"/icon.jpg",
-    logoTiem:"/logo1.jpg",
+    logoTiem:"/logo.jpg",
         //Ảnh ở Homepage carousel
     mobileCarouselImage1 : "/images/mobile-nail-salon-happy-customer-1.jpg",
     mobileCarouselImage2 : "/images/mobile-nail-salon-happy-customer-2.jpg",
@@ -282,7 +282,7 @@ const thongTinTiem1 = {
   
     geoPlaceNameContent : thongTinTiem1.areaTiem + ", " + thongTinTiem1.countryTiem,
   
-    linkBookingTiem : thongTinTiem1.linkBookingMapTiem,
+    linkBookingTiem : thongTinTiem1.linkAppBookingTiem,
   
     TimeScheduleDescription:"What are you waiting for? Come get your paws groomed! At " + thongTinTiem1.tenTiem + " we work hard to make every experience feel comfortable, personalized and relaxing. Let our experienced technicians groom your paws.",
   
@@ -479,32 +479,32 @@ const thongTinTiem1 = {
   const serviceList1 = {
     service1 : "Acrylic Fullset with normal nail polish",
     service1Time : "45 mins",
-    service1Price : "28",
+    service1Price : "23",
     service1Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
   
     service2 : "Acrylic Infill with normal nail polish",
     service2Time : "35 mins",
-    service2Price : "20",
+    service2Price : "18",
     service2Description : "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
   
     service3 : "Acrylic Full Set with Shellac",
     service3Time : "1 hr",
-    service3Price : "35",
+    service3Price : "30",
     service3Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
   
     service4 : "Acrylic Infill with Shellac",
     service4Time : "45 mins",
-    service4Price : "28",
+    service4Price : "23",
     service4Description : "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
     
     service5 : "Gel Powder Full Set with normal nail polish",
     service5Time : "45 mins",
-    service5Price : "28",
+    service5Price : "30",
     service5Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
-  
+
     service6 : "Gel Powder Infill with normal nail polish",
-    service6Time : "45 mins",
-    service6Price : "20",
+    service6Time : "35 mins",
+    service6Price : "25",
     service6Description : "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
   
     service7 : "Full Set Pink & White",
@@ -519,37 +519,37 @@ const thongTinTiem1 = {
   
     service9 : "Full Set Ombre",
     service9Time : "45 mins",
-    service9Price : "38",
+    service9Price : "35",
     service9Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
-  
+ 
     service10 : "Infill Ombre",
     service10Time : "45 mins",
-    service10Price : "32",
+    service10Price : "28",
     service10Description : "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
-  
+
     service11 : "Full Set Colour Powder",
     service11Time : "45 mins",
     service11Price : "32",
     service11Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
-  
+
     service12 : "Infill Colour Powder (Same Colour)",
     service12Time : "45 mins",
     service12Price : "23",
     service12Description : "",
-  
+ 
     service13 : "Infill Colour Powder (Different Colour)",
     service13Time : "45 mins",
     service13Price : "25",
     service13Description : "",
-  
+
     service14 : "Acrylic Fullset on Feet with normal nail polish",
     service14Time : "45 mins",
-    service14Price : "35",
+    service14Price : "30",
     service14Description : "",
-  
+
     service15 : "Acrylic Infill on Feet with normal nail polish",
     service15Time : "45 mins",
-    service15Price : "30",
+    service15Price : "25",
     service15Description : "",
   
     service16 : "Acrylic Fullset on Feet with Shellac",
@@ -564,14 +564,14 @@ const thongTinTiem1 = {
   
     service18 : "Take off Powder",
     service18Time : "20 mins",
-    service18Price : "12",
+    service18Price : "10",
     service18Description : "Just take off",
-  
+
     service19 : "Take off Acrylic and Redone a Newset",
     service19Time : "1 hr",
     service19Price : "3 to 5",
     service19Description : "Extra from £3 to £5",
-  
+
     service20 : "Take off Powder and Polish",
     service20Time : "30 mins",
     service20Price : "18",
@@ -581,22 +581,22 @@ const thongTinTiem1 = {
     service21Time : "30 mins",
     service21Price : "28",
     service21Description : "Take off then Shellac",
-  
+ 
     service22 : "Take off Powder + Manicure + Shellac",
     service22Time : "50 mins",
     service22Price : "32",
     service22Description : "Take off then Manicure and then Shellac",
-  
+ 
     service23 : "Dipping Powder SNS (from)",
     service23Time : "45 mins",
     service23Price : "32",
     service23Description : "SNS Dipping Powder creates a stronger polish finish which can help strengthen brittle or weak nails.",
-  
+
     service24 : "BIAB buider gel Fullset",
     service24Time : "35 mins",
     service24Price : "37",
     service24Description : "",
-  
+
     service25 : "BIAB buider gel Infill",
     service25Time : "30 mins",
     service25Price : "30",
@@ -656,6 +656,31 @@ const thongTinTiem1 = {
     service36Time : "35 mins",
     service36Price : "20",
     service36Description : "Take off powder and then do manicure",
+
+    service37 : "Full Set Glitter",
+    service37Time : "45 mins",
+    service37Price : "35",
+    service37Description : "",
+
+    service38 : "Infill Glitter",
+    service38Time : "45 mins",
+    service38Price : "28",
+    service38Description : "",
+
+    service39 : "2 Big Toes",
+    service39Time : "20 mins",
+    service39Price : "10",
+    service39Description : "",
+
+    service40 : "Full set acrylic nails with white tips",
+    service40Time : "45 mins",
+    service40Price : "35",
+    service40Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
+
+    service41: "Gel Powder Infill with Shellac",
+    service41Time : "45 mins",
+    service41Price : "28",
+    service41Description : "",
   }; 
   
   const serviceList2 = {
@@ -663,7 +688,7 @@ const thongTinTiem1 = {
     service1Time : "30 mins",
     service1Price : "20",
     service1Description : "",
-  
+ 
     service2 : "Nail shape with Shellac nails on feet",
     service2Time : "30 mins",
     service2Price : "20",
@@ -671,7 +696,7 @@ const thongTinTiem1 = {
   
     service3 : "Manicure Shellac",
     service3Time : "40 mins",
-    service3Price : "28",
+    service3Price : "25",
     service3Description : "Manicures are a difficult art to master. No matter how great they look when finished, they seem to always chip within days, if not in a matter of hours. Enter the Gel nail manicure - a groundbreaking technique that uses gel polishes that get 'cured' under UV lights. The result? Shiny, strong nails for weeks and no drying time!",
   
     service4 : "Pedicure Shellac",
@@ -681,7 +706,7 @@ const thongTinTiem1 = {
   
     service5 : "Gel Polish Manicure & Pedicure",
     service5Time : "1 hr 25 mins",
-    service5Price : "58",
+    service5Price : "55",
     service5Description : "Manicure includes massage, cuticle, shaping, file, polish and moisturiser. Pedicure includes scrub, dead skin, cuticle, massage, moisturise, shape, file and polish. Shellac pedicure and manicure lasts up to two weeks, it’s well worth the wait.",
   
     service6 : "Take off shellac and Redone Gel Polish on Hand",
@@ -703,14 +728,14 @@ const thongTinTiem1 = {
   const serviceList3 = {
     service1 : "Manicure with normal polish",
     service1Time : "30 mins",
-    service1Price : "18",
+    service1Price : "15",
     service1Description : "A classic manicure is all you need to take great care of your hands and nails. Includes massage, cuticle, shaping, file, polish and moisturiser.",
-  
+
     service2 : "Pedicure with normal polish",
     service2Time : "40 mins",
-    service2Price : "28",
+    service2Price : "25",
     service2Description : "A classic pedicure is all you need to take great care of your feet and nails. Includes scrub, dead skin, cuticle, massage, moisturise, shape, file and polish.",
-    
+ 
     service3 : "Luxury Pedicure",
     service3Time : "40 mins",
     service3Price : "53",
@@ -726,14 +751,15 @@ const thongTinTiem1 = {
     service5Price : "40",
     service5Description : "Manicure includes massage, cuticle, shaping, file, polish and moisturiser. Pedicure includes scrub, dead skin, cuticle, massage, moisturise, shape, file and polish.",
   
+
     service6 : "Shape & paint on hands",
     service6Time : "15 mins",
-    service6Price : "12",
+    service6Price : "8",
     service6Description : "",
   
     service7 : "Shape & paint on toes",
     service7Time : "15 mins",
-    service7Price : "15",
+    service7Price : "10",
     service7Description : "",
 
     service8 : "Smoothing Pedicure with normal polish",
@@ -785,6 +811,21 @@ const thongTinTiem1 = {
     service17Time : "90 mins",
     service17Price : "70",
     service17Description : "Your feet & hand have been longawaiting for rejuvenating pedicure & manicure. Say ahh… to a warm whirlpool soaking with Mineral Herbal Bath. Then a gentle massage and Walnut Husk Liquid Body Lufra exfoliation.While regular pedicure components are tented, a calf massage with the Invigorating Icedancer and steamy towel wrap are added for restoring vitality and energizing the legs. Dry heel are also treated with an all Spice Berry Sole Solution. Finish with a soft yet intense hydrating Baobab Body Butter for an ultimate experience",
+
+    service18 : "Spa Manicure",
+    service18Time : "40 mins",
+    service18Price : "35",
+    service18Description : "",
+
+    service19 : "Spa Pedicure",
+    service19Time : "40 mins",
+    service19Price : "35",
+    service19Description : "",
+
+    service20 : "Manicure",
+    service20Time : "30 mins",
+    service20Price : "10",
+    service20Description : "A classic manicure is all you need to take great care of your hands and nails. Includes massage, cuticle, shaping, file, polish and moisturiser.",
   };
   
   const serviceList4 = {
@@ -816,7 +857,7 @@ const thongTinTiem1 = {
   const serviceList5 = {
     service1 : "Nail Design (from)",
     service1Time : "",
-    service1Price : "3",
+    service1Price : "5",
     service1Description : "",
   
     service2 : "Diamond Crystal x10",

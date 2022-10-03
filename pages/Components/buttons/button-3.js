@@ -5,7 +5,7 @@ import { thongTinTiem2 } from '/pages/core/info';
 export default function Button3(){
     return(
         <>
-            <Link href={thongTinTiem2.callTiem}>
+            <Link href={thongTinTiem2.linkBookingTiem}>
                 <div className="button-model-1">
                     Book&nbsp;Appointment
                 </div>

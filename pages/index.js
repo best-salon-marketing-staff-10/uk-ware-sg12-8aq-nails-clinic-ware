@@ -50,7 +50,6 @@ export default function Home() {
           <meta property='og:image:height' content='1032' />
           <meta property="og:type" content='website' />
         </Head>
-        
           <div className="page-container">
             <div className="page-nav-bar">
               <div className="page-top-bar">
