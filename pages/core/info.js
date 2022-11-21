@@ -24,7 +24,7 @@ const thongTinTiem1 = {
     
     linkBookingMapTiem : "https://bit.ly/3LTkB5F",
     linkToMapTiem:"https://goo.gl/maps/jAGMuXEKr64kYLjZ8",
-    linkAppBookingTiem: "https://amazingnailswidnes0914.setmore.com/",
+    linkAppBookingTiem: "https://bit.ly/3UOyeqp",
   
     geoPositionContent : "53.36819711172669, -2.7266736622650267",
     geoRegionContent : "GB-HAL",
@@ -479,7 +479,7 @@ const thongTinTiem1 = {
   const serviceList1 = {
     service1 : "Acrylic Fullset with normal nail polish",
     service1Time : "45 mins",
-    service1Price : "23",
+    service1Price : "25",
     service1Description : "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
   
     service2 : "Acrylic Infill with normal nail polish",
@@ -681,6 +681,16 @@ const thongTinTiem1 = {
     service41Time : "45 mins",
     service41Price : "28",
     service41Description : "",
+
+    service42: "Acrylic Fullset with no color",
+    service42Time: "45 mins",
+    service42Price: "23",
+    service42Description: "",
+
+    service43 : "Acrylic Infill with no color",
+    service43Time : "35 mins",
+    service43Price : "18",
+    service43Description : "",
   }; 
   
   const serviceList2 = {

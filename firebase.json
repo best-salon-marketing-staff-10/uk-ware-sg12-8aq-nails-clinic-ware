@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "",
+    "site": "amazing-nails-salon",
     "public": "out",
     "ignore": [
       "firebase.json",
