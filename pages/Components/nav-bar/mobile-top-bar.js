@@ -14,7 +14,7 @@ export default function MobileTopBar(){
                 </Link>
                 <div className="top-bar-item-spacer">
                 </div>
-                <Link href={thongTinTiem2.linkBookingTiem}>
+                <Link href={thongTinTiem2.callTiem}>
                     <div className="top-bar-item-right">
                         BOOK NOW
                     </div>

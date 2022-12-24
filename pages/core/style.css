@@ -1046,4 +1046,13 @@
     line-height: 2;
   }
 
+  /*Phần Notification Bar - Thanh hiển thị thông báo, để ở trên đầu các trang
+  Nếu ko có thông báo gì thì ẩn đi
+  */
+  .page-notification-bar{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #ff0041;
+  }
+
   
