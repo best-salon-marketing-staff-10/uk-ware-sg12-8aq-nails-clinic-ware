@@ -19,7 +19,6 @@ import TabletFooter from '/pages/Components/footer/tablet-footer'
 import LogoNav from '/pages/Components/logo-nav/logo-nav';
 import { thongTinTiem1 } from '/pages/core/info';
 import { thongTinTiem2 } from '/pages/core/info';
-import NotificationBar from '/pages/Components/nav-bar/notification-bar'
 
 export default function Home() {
   if (process.browser){
@@ -47,15 +46,15 @@ export default function Home() {
           <meta property='og:description' 
             content={thongTinTiem2.metaDescriptionContent} />
           <meta property='og:url' content={thongTinTiem1.websiteTiem} />
-          <meta property='og:image:width' content='1164' />
-          <meta property='og:image:height' content='1032' />
+          <meta property='og:image:width' content='1920' />
+          <meta property='og:image:height' content='1073' />
           <meta property="og:type" content='website' />
+
+          <meta name="google-site-verification" content="8PY9C4tyFxx-C0abTprXegCqjI9VHTxWzt57enQ1cNc" />
+
         </Head>
           <div className="page-container">
             <div className="page-nav-bar">
-              <div className="page-notification-bar">
-                <NotificationBar />
-              </div>
               <div className="page-top-bar">
                 <div className="page-mobile-top-bar">
                   <MobileTopBar />
