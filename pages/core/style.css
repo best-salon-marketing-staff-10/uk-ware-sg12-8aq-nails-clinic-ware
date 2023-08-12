@@ -544,8 +544,8 @@
     .mobile-bottom-nav-bar-home,
     .mobile-bottom-nav-bar-services,
     .mobile-bottom-nav-bar-contact-us{
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 8px;
+      margin-right: 8px;
     }
     .mobile-bottom-nav-bar-section-content{
       color: #B0B7C3;
@@ -743,7 +743,7 @@
     .nhan-manh-content-description{
       font-family: Noto Sans;
       margin-bottom: 15px;
-      font-size: 18px;
+      font-size: 20px;
     }
   /*Phần Nhấn Mạnh 4
   */
@@ -784,7 +784,7 @@
     }
     .nhan-manh-4-content-description{
       font-family: Noto Sans;
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 25px;
     }
     .nhan-manh-4-content-1-wrapper{
