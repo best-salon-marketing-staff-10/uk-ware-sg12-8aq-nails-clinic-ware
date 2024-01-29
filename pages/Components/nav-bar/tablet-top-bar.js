@@ -13,7 +13,7 @@ export default function TabletTopBar(){
                 </Link>
                 <div className="top-bar-item-spacer">
                 </div>
-                <Link href={thongTinTiem2.callTiem}>
+                <Link href={thongTinTiem2.linkBookingTiem}>
                     <div className="top-bar-item-right">
                         BOOK NOW
                     </div>
