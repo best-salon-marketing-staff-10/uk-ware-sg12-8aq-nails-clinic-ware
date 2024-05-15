@@ -24,7 +24,7 @@ const thongTinTiem1 = {
   
   linkBookingMapTiem: "",
   linkToMapTiem:"https://maps.app.goo.gl/gfvoMTpRs8mgNw2G6",
-  linkAppBookingTiem: "",
+  linkAppBookingTiem: "https://bit.ly/3WCJVUZ",
 
   geoPositionContent: "53.55956779701575, -2.3246658559553284",
   geoRegionContent: "GB-MAN",
