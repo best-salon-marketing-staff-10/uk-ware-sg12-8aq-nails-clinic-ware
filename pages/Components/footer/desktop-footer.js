@@ -12,73 +12,56 @@ export default function DesktopFooter(){
             <Head>
             </Head>
             <div className="footer">
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                     <div className="footer-ten-tiem">
                         <LogoNav />
                     </div>
                 </Link>
                 <div className="divider">
-                    <NavDropdown.Divider />
+                    <hr />
                 </div>
                 <div className="footer-navigation">
                     <div className="footer-navigation-item-group-1">
                         <div className="footer-navigation-item">
-                            <Link href={thongTinTiem1.linkTomainMenu1}>
-                                <a className="footer-navigation-item">
+                            <Link href={thongTinTiem1.linkTomainMenu1} className="footer-navigation-item">
                                     {thongTinTiem1.mainMenu1}
-                                </a>
                             </Link>
                         </div>
-                    
                         <div className="footer-navigation-item">
                             <div className="footer-navigation-item-services">
-                                <Link href={thongTinTiem1.linkTomainMenu4}>
-                                    <a className="footer-navigation-item">
+                                <Link href={thongTinTiem1.linkTomainMenu4} className="footer-navigation-item">
                                         {thongTinTiem1.mainMenu4}
-                                    </a>
                                 </Link>
                             </div>
                             <div className="footer-navigation-item-detail-services">
                                 <div className="footer-navigation-item-detail-services">
-                                    <Link href={thongTinTiem1.linkTomainService1}>
-                                        <a className="services-list-1">
+                                    <Link href={thongTinTiem1.linkTomainService1} className="services-list-1">
                                             {thongTinTiem1.mainService1}
-                                        </a>
                                     </Link>
                                 </div>
                                 <div className="footer-navigation-item-detail-services">
-                                    <Link href={thongTinTiem1.linkTomainService2}>
-                                        <a className="services-list-2">
+                                    <Link href={thongTinTiem1.linkTomainService2} className="services-list-2">
                                             {thongTinTiem1.mainService2}
-                                        </a>
                                     </Link>
                                 </div>
                                 <div className="footer-navigation-item-detail-services">
-                                    <Link href={thongTinTiem1.linkTomainService3}>
-                                        <a className="services-list-3">
+                                    <Link href={thongTinTiem1.linkTomainService3} className="services-list-3">
                                             {thongTinTiem1.mainService3}
-                                        </a>
                                     </Link>
                                 </div>
                                 <div className="footer-navigation-item-detail-services">
-                                    <Link href={thongTinTiem1.linkTomainService4}>
-                                        <a className="services-list-4">
+                                    <Link href={thongTinTiem1.linkTomainService4} className="services-list-4">
                                             {thongTinTiem1.mainService4}
-                                        </a>
                                     </Link>
                                 </div>
                                 <div className="footer-navigation-item-detail-services">
-                                    <Link href={thongTinTiem1.linkTomainService4}>
-                                        <a className="services-list-5">
+                                    <Link href={thongTinTiem1.linkTomainService4} className="services-list-5">
                                             {thongTinTiem1.mainService5}
-                                        </a>
                                     </Link>
                                 </div>
                                 <div className="footer-navigation-item-detail-services">
-                                    <Link href={thongTinTiem1.linkTomainService6}>
-                                        <a className="services-list-6">
+                                    <Link href={thongTinTiem1.linkTomainService6} className="services-list-6">
                                             {thongTinTiem1.mainService6}
-                                        </a>
                                     </Link>
                                 </div>
                             </div>
@@ -86,36 +69,28 @@ export default function DesktopFooter(){
                     </div>
                     <div className="footer-navigation-item-group-2">
                         <div className="footer-navigation-item">
-                            <Link href={thongTinTiem1.linkTomainMenu3}>
-                                <a className="footer-navigation-item">
+                            <Link href={thongTinTiem1.linkTomainMenu3} className="footer-navigation-item">
                                     {thongTinTiem1.mainMenu3}
-                                </a>
                             </Link>
                         </div>
                         <div className="footer-navigation-item">
-                            <Link href={thongTinTiem1.linkTomainMenu2}>
-                                <a className="footer-navigation-item">
+                            <Link href={thongTinTiem1.linkTomainMenu2} className="footer-navigation-item">
                                     {thongTinTiem1.mainMenu2}
-                                </a>
                             </Link>
                         </div>
                         <div className="footer-navigation-item">
-                            <Link href={thongTinTiem1.linkTomainMenu5}>
-                                <a className="footer-navigation-item">
+                            <Link href={thongTinTiem1.linkTomainMenu5} className="footer-navigation-item">
                                     {thongTinTiem1.mainMenu5}
-                                </a>
                             </Link>
                         </div>
                         <div className="footer-navigation-item">
                             <div className="footer-navigation-item">
-                                <Link href="/">
-                                    <a className="footer-navigation-item">
+                                <Link href="/" className="footer-navigation-item">
                                         Contact us
-                                    </a>
                                 </Link>
                             </div>
                             <div className="footer-navigation-item-details">
-                                <Link href={thongTinTiem2.callTiem}>
+                                <Link href={thongTinTiem2.callTiem} legacyBehavior>
                                     <div className="footer-navigation-item-details-1">
                                         <div>
                                             <img className="footer-image" alt={thongTinTiem2.footerImagePhoneIconAlt} src={thongTinTiem1.footerImagePhoneIcon} />
@@ -127,7 +102,7 @@ export default function DesktopFooter(){
                                         </div>
                                     </div>
                                 </Link>  
-                                <Link href={thongTinTiem1.linkToMapTiem}>  
+                                <Link href={thongTinTiem1.linkToMapTiem} legacyBehavior>  
                                     <div className="footer-navigation-item-details-2">
                                         <div>
                                             <img className="footer-image" alt={thongTinTiem2.footerImageMapPointerIconAlt}  src={thongTinTiem1.footerImageMapPointerIcon} />
@@ -147,11 +122,8 @@ export default function DesktopFooter(){
                     <iframe src={thongTinTiem1.iframeMapLink} width="1920" height="500" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div className="footer-copyright">
-                    © Copyright and Powered by 
-                    <Link href="https://speedcustomer.com">
-                        <a className="footer-copyright" rel="dofollow">
-                            &nbsp;SC
-                        </a>
+                    <Link href="https://bestsalonmarketing.com" className="footer-copyright" rel="dofollow">
+                        © Copyright and Powered by Best Salon Marketing
                     </Link>
                 </div>
             </div>

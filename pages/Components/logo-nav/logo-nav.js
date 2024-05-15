@@ -6,7 +6,7 @@ export default function LogoNav(){
 
     return(
         <>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
                 <div className="logo-container">
                     
                     <div className="logo">
@@ -17,7 +17,7 @@ export default function LogoNav(){
                             {thongTinTiem1.tenTiem}
                         </div>
                         <div className="logo-text-2">
-                            {thongTinTiem1.cityTiem}
+                            {thongTinTiem1.areaTiem}, {thongTinTiem1.cityTiem}
                         </div>
                     </div>
                     

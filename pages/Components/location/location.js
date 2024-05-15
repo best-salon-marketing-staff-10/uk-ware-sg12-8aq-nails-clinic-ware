@@ -29,7 +29,7 @@ export default function Location(){
                             <br />
                             {thongTinTiem1.postcodeTiem}
                         </div>
-                        <Link href={thongTinTiem2.callTiem}>
+                        <Link href={thongTinTiem2.callTiem} legacyBehavior>
                             <div className="phone-tiem">
                                 {thongTinTiem1.phoneTiem}
                             </div>

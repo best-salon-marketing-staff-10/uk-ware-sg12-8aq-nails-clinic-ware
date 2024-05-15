@@ -11,8 +11,7 @@ export default function MobileBottomNavBar(){
             <div className="mobile-bottom-nav-bar-section-bottom-nav-bar">
                 <Navbar expand={false} bg="white" variant="d" fixed="bottom">
                     <div className="mobile-bottom-nav-bar-section">
-                        <Link href={thongTinTiem1.BottomNavButton1LinkTo}>
-                            <a className="mobile-bottom-nav-bar-link-a">
+                        <Link href={thongTinTiem1.BottomNavButton1LinkTo} className="mobile-bottom-nav-bar-link-a">
                                 <div className="mobile-bottom-nav-bar-home">
                                     <div>
                                         <img className="mobile-bottom-nav-bar-img" alt={thongTinTiem1.BottomNavButton1IconAlt} src={thongTinTiem1.BottomNavButton1Icon} />
@@ -21,10 +20,8 @@ export default function MobileBottomNavBar(){
                                         {thongTinTiem1.BottomNavButton1Content}
                                     </div>   
                                 </div>
-                            </a>
                         </Link>
-                        <Link href={thongTinTiem1.BottomNavButton2LinkTo}>
-                            <a className="mobile-bottom-nav-bar-link-a">
+                        <Link href={thongTinTiem1.BottomNavButton2LinkTo} className="mobile-bottom-nav-bar-link-a">
                                 <div className="mobile-bottom-nav-bar-services">
                                     <div>
                                         <img className="mobile-bottom-nav-bar-img" alt={thongTinTiem1.BottomNavButton2IconAlt} src={thongTinTiem1.BottomNavButton2Icon} />
@@ -33,10 +30,8 @@ export default function MobileBottomNavBar(){
                                         {thongTinTiem1.BottomNavButton2Content}
                                     </div> 
                                 </div>
-                            </a>
                         </Link>
-                        <Link href={thongTinTiem2.linkBookingTiem}>
-                            <a className="mobile-bottom-nav-bar-link-a">
+                        <Link href={thongTinTiem2.linkBookingTiem} className="mobile-bottom-nav-bar-link-a">
                                 <div className="mobile-bottom-nav-bar-contact-us">
                                     <div>
                                         <img className="mobile-bottom-nav-bar-img" alt={thongTinTiem1.BottomNavButton3IconAlt} src={thongTinTiem1.BottomNavButton3Icon} />
@@ -45,7 +40,6 @@ export default function MobileBottomNavBar(){
                                         Appointment&nbsp;now 
                                     </div> 
                                 </div>
-                            </a>
                         </Link>
                     </div>    
                 </Navbar>

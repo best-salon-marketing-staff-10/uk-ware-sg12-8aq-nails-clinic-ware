@@ -8,7 +8,7 @@ export default function Button4(){
     return(
         <>
             <div className="button-4">
-                <Link href={thongTinTiem1.linkToMapTiem}>
+                <Link href={thongTinTiem1.linkToMapTiem} legacyBehavior>
                     <div className="button-model-1">
                         Find us
                     </div>

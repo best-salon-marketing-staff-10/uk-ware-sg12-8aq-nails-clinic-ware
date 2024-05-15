@@ -8,21 +8,21 @@ export default function Button1(){
     return(
         <>
             <div className="learn-more-button-to-mobile">
-                <Link href="#m-section-1">
+                <Link href="#m-section-1" legacyBehavior>
                     <div className="button-model-1">
                         {thongTinTiem1.button1Content}
                     </div>
                 </Link>
             </div>
             <div className="learn-more-button-to-tablet">
-                <Link href="#t-section-1">
+                <Link href="#t-section-1" legacyBehavior>
                     <div className="button-model-1">
                         {thongTinTiem1.button1Content}
                     </div>
                 </Link>
             </div>
             <div className="learn-more-button-to-desktop">
-                <Link href="#d-section-1">
+                <Link href="#d-section-1" legacyBehavior>
                     <div className="button-model-1">
                         {thongTinTiem1.button1Content}
                     </div>
