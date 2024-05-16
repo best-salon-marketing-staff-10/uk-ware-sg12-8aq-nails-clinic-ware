@@ -35,8 +35,8 @@ const thongTinTiem1 = {
     workingTimeMon: "Monday: 09:30–18:30",
     workingTimeTue: "Tuesday: 09:30–18:30",
     workingTimeWed: "Wednesday: 09:30–18:30",
-    workingTimeThu: "Thursday: 09:30–19:00",
-    workingTimeFri: "Friday: 09:30–19:00",
+    workingTimeThu: "Thursday: 09:30–18:30",
+    workingTimeFri: "Friday: 09:30–18:30",
     workingTimeSat: "Saturday: 09:30–18:30",
     workingTimeSun: "Sunday: Closed",
 
@@ -278,7 +278,7 @@ const thongTinTiem2 = {
   //Xử lý gọi cho tiệm
   callTiem:`tel:${thongTinTiem1.phoneTiem}`,
 
-  metaDescriptionContent: "We are one of the best nail salons in" + " " + thongTinTiem1.areaTiem + " " + "Please come and make yourself at home here at our nail salon." + thongTinTiem1.areaTiem,
+  metaDescriptionContent: "We are one of the best nail salons in" + " " + thongTinTiem1.areaTiem + ". " + "Please come and make yourself at home here at our nail salon." + " " + thongTinTiem1.areaTiem,
 
   geoPlaceNameContent: thongTinTiem1.areaTiem + ", " + thongTinTiem1.countryTiem,
 
@@ -432,11 +432,11 @@ const thongTinTiem2 = {
 
   //offer.js
   offerTitle: "Our Offers and Benefits",
-  offerDescription: "Free all cold drink and hot drink, chocolate, sweet or snack",
+  offerDescription: "",
   offerHeading: "Our offers:",
-  offerContent1: "✅10% for Student. ",
-  offerContent2: "✅Refer a friend to get 5 pounds voucher. ",
-  offerContent3: "✅Group from 3 people get 10% with the main treatment",
+  offerContent1: "✅10% discount for Student and NHS worker. ",
+  offerContent2: "✅Get 10% off your third visit and 25% off your sixth visit with our loyalty card.",
+  offerContent3: "",
 
   //time-schedule.js
   timeScheduleHeading: "OPENING HOURS",

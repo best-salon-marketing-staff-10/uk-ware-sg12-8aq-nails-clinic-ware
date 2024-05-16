@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
         <Head>
-          <title>The best nail salon in {thongTinTiem1.cityTiem} - {thongTinTiem1.tenTiem}</title>
+          <title>The best nail salon in {thongTinTiem1.areaTiem}, {thongTinTiem1.cityTiem} - {thongTinTiem1.tenTiem}</title>
           <meta name="description" 
             content= {thongTinTiem2.metaDescriptionContent} />
           <meta charSet="UTF-8" />

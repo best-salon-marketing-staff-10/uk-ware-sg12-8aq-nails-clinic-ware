@@ -118,7 +118,9 @@ export default function DesktopContent(){
                         </div>
                     </div>
                 </div>
-
+                <div>
+                    <Offers />
+                </div>
                 <div>
                     <TimeSchedule />
                 </div>
