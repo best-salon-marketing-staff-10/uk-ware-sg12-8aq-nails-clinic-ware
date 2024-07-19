@@ -1,4 +1,46 @@
 // Phần info này bố trí như sau
+//Cần up website lên rồi check với schema validator xem thực sự ổn chưa
+//Tối ưu hóa thẻ h1 h2 h3 cho từng page, sửa các đầu mục, phần description đã sửa xong
+
+//images và các serviceList là các mục ko cần sửa gì
+
+//Viết hướng dẫn và đào tạo người sửa trang này
+
+/*
+businessOpeningTimeInput - Cần thay đổi cái này, nhập đầu vào giờ làm việc của tiệm
+processedBusinessOpeningTime - Cái này kiểm soát thông tin hiển thị trên website của tiệm
+changedInfo - Các thông tin cần thay đổi thường xuyên
+processedInfo - Là các thông tin được xử lý từ thằng changedInfo
+
+menu - Danh sách các tab trên thanh navigation
+serviceCategory - Danh sách các hạng mục dịch vụ của tiệm (Nhóm dịch vụ lớn, để trong đó có các dịch vụ con cụ thể)
+seoInfo - Là các mảnh ghép từ khóa
+seoKeyword - Là các từ khóa để làm SEO
+imageAlt - Là các thẻ Alt cho ảnh, đã vào công thức
+
+headerInput - Là những thông tin đc dùng để nhập vào mục Header
+schemaInput - Là những thông tin đc dùng để nhập vào mục schemaData
+schemaData - Là những thông tin sẽ hiển thị lên Schema của website
+  Giờ mở cửa của tiệm khai báo lên Schema
+  Nếu ko mở ngày nào thì xóa ngày đó đi trong mục openingHoursSpecification
+
+pageContent - Chứa tất cả các nội dung của website trừ phần Button
+button - Tất cả về các nút, nội dung của nút, link nút sẽ dẫn đến khi click vào
+images - Đường link của tất cả các ảnh trên website
+serviceList1 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+serviceList2 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+serviceList3 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+serviceList4 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+serviceList5 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+serviceList6 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+serviceList7 - Danh sách các dịch vụ thuộc serviceCategory tương ứng
+
+Các mục cần thay đổi thông tin khi tạo website mới
+changedInfo
+serviceList
+*/
+
+
 //  thongTinTiem1 gồm:
 //    1. Thông tin cơ bản của tiệm
 //    2. Các ảnh của tiệm
@@ -9,131 +51,92 @@
 //    1. Các nội dung của tiệm
 //    2. Các thẻ Alt
 
+//Cần bố trí lại, xem những thông tin gì cần sửa thì cho riêng vào 1 mục
 
-const thongTinTiem1 = {
-  // Thông tin cơ bản của tiệm
-  tenTiem: "Radcliffe Nails and Spa",
-  addressTiemLine1: "15 Deansgate",
-  areaTiem: "Radcliffe",
-  districtTiem:"Radcliffe",
-  cityTiem: "Manchester",
-  postcodeTiem: "M26 2SH",
-  countryTiem: "United Kingdom",
+//Cần sửa mục nào thì ghi hết vào đây
+/*
+businessOpeningTimeInput
+personReviewAuthorName
+*/
+const businessOpeningTimeInput = {
+  //Thời gian làm việc của tiệm
+  monOpeningTime: "09:30",
+  monClosingTime: "18:30",
 
-  phoneTiem: "07384565266",
-  
-  linkBookingMapTiem: "",
-  linkToMapTiem:"https://maps.app.goo.gl/gfvoMTpRs8mgNw2G6",
-  linkAppBookingTiem: "https://bit.ly/3WCJVUZ",
+  tueOpeningTime: "09:30",
+  tueClosingTime: "18:30",
 
-  geoPositionContent: "53.55956779701575, -2.3246658559553284",
-  geoRegionContent: "GB-MAN",
+  wedOpeningTime: "09:30",
+  wedClosingTime: "18:30",
 
-  websiteTiem:"https://radcliffenailsandspa.web.app",
+  thuOpeningTime: "09:30",
+  thuClosingTime: "18:30",
 
-    //Thời gian làm việc của tiệm
-    workingTimeMon: "Monday: 09:30–18:30",
-    workingTimeTue: "Tuesday: 09:30–18:30",
-    workingTimeWed: "Wednesday: 09:30–18:30",
-    workingTimeThu: "Thursday: 09:30–18:30",
-    workingTimeFri: "Friday: 09:30–18:30",
-    workingTimeSat: "Saturday: 09:30–18:30",
-    workingTimeSun: "Sunday: Closed",
+  friOpeningTime: "09:30",
+  friClosingTime: "18:30",
 
-    //iframe map
+  satOpeningTime: "09:30",
+  satClosingTime: "18:00",
+
+  sunOpeningTime: "",
+  sunClosingTime: "",
+}
+
+const processedBusinessOpeningTime = {
+  //Thời gian làm việc của tiệm hiển thị trong file time-schedule.js
+  //Đóng cửa ngày nào chỉnh sửa ngày đó thành Closed
+  workingTimeMon: "Monday: " + businessOpeningTimeInput.monOpeningTime + "–" + businessOpeningTimeInput.monClosingTime,
+  workingTimeTue: "Tuesday: " + businessOpeningTimeInput.tueOpeningTime + "–" + businessOpeningTimeInput.tueClosingTime,
+  workingTimeWed: "Wednesday: " + businessOpeningTimeInput.wedOpeningTime + "–" + businessOpeningTimeInput.wedClosingTime,
+  workingTimeThu: "Thursday: " + businessOpeningTimeInput.thuOpeningTime + "–" + businessOpeningTimeInput.thuClosingTime,
+  workingTimeFri: "Friday: " + businessOpeningTimeInput.friOpeningTime + "–" + businessOpeningTimeInput.friClosingTime,
+  workingTimeSat: "Saturday: " + businessOpeningTimeInput.satOpeningTime + "–" + businessOpeningTimeInput.satClosingTime,
+  workingTimeSun: "Sunday: Closed" + businessOpeningTimeInput.sunOpeningTime + "" + businessOpeningTimeInput.sunClosingTime,
+}
+
+const changedInfo = {
+  businessName: "Radcliffe Nails and Spa",
+  businessAddressLevel1: "15 Deansgate",
+  businessAddressLevel2: "Radcliffe",
+  businessAddressLevel3: "Manchester",
+  businessAddressLevel4: "England",
+  businessCountry: "United Kingdom",
+  businessGeoRegionCode: "GB",
+
+  //Tra cứu tên thành phố trong https://www.geonames.org/GB/administrative-division-united-kingdom.html và điền vào mã code tương ứng
+  businessAddressDivisionCode: "MAN",
+
+  businessPostCode: "M26 2SH",
+
+
+  businessPhoneNumber: "07384565266",
+
+  //Website tiệm KO có dấu / ở cuối
+  businessWebsite: "https://radcliffenailsandspa.web.app",
+
+  linkBookingMap: "",
+  linkBookingApp: "https://bit.ly/3WCJVUZ",
+  linkToMap: "https://maps.app.goo.gl/gfvoMTpRs8mgNw2G6",
+
+
+
+  //Mở Google Maps tiệm, zoom sát vào, chuột phải
+  geoLatitude: 53.55956779701575,
+  geoLongitude: -2.3246658559553284,
+
+  //Code xác minh của website trên Google Search
+  metaGoogleSiteVerification: "8PY9C4tyFxx-C0abTprXegCqjI9VHTxWzt57enQ1cNc",
+
+  //iframe map
   iframeMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.9011465502945!2d-2.325940933839103!3d53.55953209480201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba50142d9fcbd%3A0x3b6ed2619122923e!2sRadcliffe%20Nails%20and%20Spa!5e0!3m2!1sen!2s!4v1715739588863!5m2!1sen!2s",
 
-    // Các ảnh của tiệm
-  ogImage:"https://radcliffenailsandspa.web.app/images/desktop-nail-salon-happy-customer-1.jpg",
-  icon:"/icon-2.jpg",
-  logoTiem:"/logo.jpg",
-      //Ảnh ở Homepage carousel
-  mobileCarouselImage1: "/images/mobile-nail-salon-happy-customer-1.jpg",
-  mobileCarouselImage2: "/images/mobile-nail-salon-happy-customer-2.jpg",
-  mobileCarouselImage3: "/images/mobile-nail-salon-happy-customer-3.jpg",
+  // Các ảnh của tiệm
+  ogImage: "https://radcliffenailsandspa.web.app/images/desktop-nail-salon-happy-customer-1.jpg",
+  icon: "/icon-2.jpg",
+  businessLogo: "/logo.jpg",
+}
 
-  tabletCarouselImage1: "/images/tablet-nail-salon-happy-customer-1.jpg",
-  tabletCarouselImage2: "/images/tablet-nail-salon-happy-customer-2.jpg",
-  tabletCarouselImage3: "/images/tablet-nail-salon-happy-customer-3.jpg",
-
-  desktopCarouselImage1: "/images/desktop-nail-salon-happy-customer-1.jpg",
-  desktopCarouselImage2: "/images/desktop-nail-salon-happy-customer-2.jpg",
-  desktopCarouselImage3: "/images/desktop-nail-salon-happy-customer-3.jpg",
-      //Ảnh ở Homepage khi vuốt xuống
-  NhanhManh2Image1: "/images/nail-extension-1.jpg",
-
-  NhanhManh3Image1: "/images/nail-extension-2.jpg",
-
-  NhanhManh4Image1: "/images/nail-extension-3.jpg",
-  NhanhManh4Image2: "/images/nail-extension-4.jpg",
-
-  LocationImage1: "/images/nail-extension-11.jpg",
-
-  serviceList1Image1: "/images/nail-extension-5.jpg",
-  serviceList1Image2: "/images/nail-extension-6.jpg",
-  serviceList1Image3: "/images/nail-extension-7.jpg",
-  serviceList1Image4: "/images/nail-extension-8.jpg",
-  serviceList1Image5: "/images/nail-extension-9.jpg",
-
-  serviceList2Image1: "/images/gel-nails-shellac-nails-1.jpg",
-  serviceList2Image2: "/images/gel-nails-shellac-nails-2.jpg",
-  serviceList2Image3: "/images/gel-nails-shellac-nails-3.jpg",
-  serviceList2Image4: "/images/gel-nails-shellac-nails-4.jpg",
-  serviceList2Image5: "/images/gel-nails-shellac-nails-5.jpg",
-  
-  serviceList3Image1: "/images/pedicure-1.jpg",
-  serviceList3Image2: "/images/pedicure-2.jpg",
-  serviceList3Image3: "/images/pedicure-3.jpg",
-  serviceList3Image4: "/images/pedicure-4.jpg",
-  serviceList3Image5: "/images/pedicure-5.jpg",
-
-  serviceList4Image1: "/images/hair-wash-1.jpg",
-  serviceList4Image2: "/images/hair-wash-2.jpg",
-  serviceList4Image3: "/images/hair-wash-3.jpg",
-  serviceList4Image4: "/images/hair-wash-4.jpg",
-  serviceList4Image5: "/images/hair-wash-5.jpg",
-
-  serviceList5Image1: "/images/nail-design-1.jpg",
-  serviceList5Image2: "/images/nail-design-2.jpg",
-  serviceList5Image3: "/images/nail-design-3.jpg",
-  serviceList5Image4: "/images/nail-design-4.jpg",
-  serviceList5Image5: "/images/nail-design-5.jpg",
-
-  serviceList6Image1: "/images/eyebrow-1.jpg",
-  serviceList6Image2: "/images/eyebrow-2.jpg",
-  serviceList6Image3: "/images/eyebrow-3.jpg",
-  serviceList6Image4: "",
-  serviceList6Image5: "",
-
-  serviceList7Image1: "/images/facial-1.jpg",
-  serviceList7Image2: "/images/facial-2.jpg",
-  serviceList7Image3: "/images/facial-3.jpg",
-  serviceList7Image4: "/images/facial-4.jpg",
-  serviceList7Image5: "/images/facial-5.jpg",
-
-  //Ảnh trang about cho 3 giao diện
-
-  mobileAboutUsImage1: "/images/mobile-nail-salon-1.jpg",
-  mobileAboutUsImage2: "/images/mobile-nail-salon-2.jpg",
-  mobileAboutUsImage3: "/images/mobile-nail-salon-3.jpg",
-
-  tabletAboutUsImage1: "/images/tablet-nail-salon-1.jpg",
-  tabletAboutUsImage2: "/images/tablet-nail-salon-2.jpg",
-  tabletAboutUsImage3: "/images/tablet-nail-salon-3.jpg",
-
-  desktopAboutUsImage1: "/images/desktop-nail-salon-1.jpg",
-  desktopAboutUsImage2: "/images/desktop-nail-salon-2.jpg",
-  desktopAboutUsImage3: "/images/desktop-nail-salon-3.jpg",
-
-  desktopAboutUsDongVienImage1: "/images/nail-extension-15.jpg",
-  desktopAboutUsDongVienImage2: "/images/nail-extension-16.jpg",
-  desktopAboutUsDongVienImage3: "/images/nail-extension-17.jpg",
-
-    //Ảnh cho phần động viên
-  dongVien1Image1: "/images/nail-extension-18.jpg",
-  dongVien2Image1: "/images/nail-extension-19.jpg",
-
-  // Các đường link của tiệm
+const menu = {
   mainMenu1: "Home",
   mainMenu2: "About us",
   mainMenu3: "Book Now",
@@ -141,95 +144,540 @@ const thongTinTiem1 = {
   mainMenu5: "Our Policies",
   mainMenu6: "Contact us",
 
-  linkTomainMenu1: "/",
-  linkTomainMenu2: "/about-us",
-  linkTomainMenu3: "/appointment",
-  linkTomainMenu4: "/services",
-  linkTomainMenu5: "/our-policy",
+  linkToMainMenu1: "/",
+  linkToMainMenu2: "/about-us",
+  linkToMainMenu3: "/appointment",
+  linkToMainMenu4: "/services",
+  linkToMainMenu5: "/our-policy",
+}
 
-  mainService1:"Nail extensions",
-  mainService2:"Gel / Shellac",
-  mainService3:"Regular",
-  mainService4:"Hair Wash massage with NuSkin",
-  mainService5:"Nail design",
-  mainService6:"Waxing",
-  mainService7:"Facial",
+const serviceCategory = {
+  //Danh sách các dịch vụ của tiệm
+  serviceCategory1: "Nail extensions",
+  serviceCategory2: "Gel / Shellac",
+  serviceCategory3: "Regular",
+  serviceCategory4: "Hair Wash massage with NuSkin",
+  serviceCategory5: "Nail design",
+  serviceCategory6: "Waxing",
+  serviceCategory7: "Facial",
 
-  linkTomainService1: "/services#m-service-list-1",
-  linkTomainService2: "/services#m-service-list-2",
-  linkTomainService3: "/services#m-service-list-3",
-  linkTomainService4: "/services#m-service-list-4",
-  linkTomainService5: "/services#m-service-list-5",
-  linkTomainService6: "/services#m-service-list-6",
-  linkTomainService7: "/services#m-service-list-7",
+  mobileLinkToServiceCategory1: "/services#m-service-list-1",
+  mobileLinkToServiceCategory2: "/services#m-service-list-2",
+  mobileLinkToServiceCategory3: "/services#m-service-list-3",
+  mobileLinkToServiceCategory4: "/services#m-service-list-4",
+  mobileLinkToServiceCategory5: "/services#m-service-list-5",
+  mobileLinkToServiceCategory6: "/services#m-service-list-6",
+  mobileLinkToServiceCategory7: "/services#m-service-list-7",
 
-  tabletLinkTomainService1: "/services#t-service-list-1",
-  tabletLinkTomainService2: "/services#t-service-list-2",
-  tabletLinkTomainService3: "/services#t-service-list-3",
-  tabletLinkTomainService4: "/services#t-service-list-4",
-  tabletLinkTomainService5: "/services#t-service-list-5",
-  tabletLinkTomainService6: "/services#t-service-list-6",
-  tabletLinkTomainService7: "/services#t-service-list-7",
+  tabletLinkToServiceCategory1: "/services#t-service-list-1",
+  tabletLinkToServiceCategory2: "/services#t-service-list-2",
+  tabletLinkToServiceCategory3: "/services#t-service-list-3",
+  tabletLinkToServiceCategory4: "/services#t-service-list-4",
+  tabletLinkToServiceCategory5: "/services#t-service-list-5",
+  tabletLinkToServiceCategory6: "/services#t-service-list-6",
+  tabletLinkToServiceCategory7: "/services#t-service-list-7",
 
-  desktopLinkTomainService1: "/services#d-service-list-1",
-  desktopLinkTomainService2: "/services#d-service-list-2",
-  desktopLinkTomainService3: "/services#d-service-list-3",
-  desktopLinkTomainService4: "/services#d-service-list-4",
-  desktopLinkTomainService5: "/services#d-service-list-5",
-  desktopLinkTomainService6: "/services#d-service-list-6",
-  desktopLinkTomainService7: "/services#d-service-list-7",
+  desktopLinkToServiceCategory1: "/services#d-service-list-1",
+  desktopLinkToServiceCategory2: "/services#d-service-list-2",
+  desktopLinkToServiceCategory3: "/services#d-service-list-3",
+  desktopLinkToServiceCategory4: "/services#d-service-list-4",
+  desktopLinkToServiceCategory5: "/services#d-service-list-5",
+  desktopLinkToServiceCategory6: "/services#d-service-list-6",
+  desktopLinkToServiceCategory7: "/services#d-service-list-7",
+}
+
+const seoInfo = {
+  keyword1: "nail salon",
+  keyword2: "nails",
+
+  serviceKeyword1: "acrylic nails",
+  serviceKeyword2: "nails extension",
+  serviceKeyword3: "shellac nails",
+  serviceKeyword4: "manicure",
+  serviceKeyword5: "pedicure",
+
+  localKeyword1: changedInfo.businessAddressLevel2,
+  localKeyword2: changedInfo.businessAddressLevel3,
+}
+
+const seoKeyword = {
+  seoKeyword1: seoInfo.keyword1 + " in " + seoInfo.localKeyword1,
+  seoKeyword15: seoInfo.keyword1 + " " + seoInfo.localKeyword1,
+  seoKeyword2: seoInfo.keyword1 + " " + seoInfo.localKeyword2,
+
+  seoKeyword3: seoInfo.keyword2 + " " + seoInfo.localKeyword1,
+  seoKeyword4: seoInfo.keyword2 + " " + seoInfo.localKeyword2,
+
+  seoKeyword5: seoInfo.serviceKeyword1 + " " + seoInfo.localKeyword1,
+  seoKeyword6: seoInfo.serviceKeyword1 + " " + seoInfo.localKeyword2,
+
+  seoKeyword7: seoInfo.serviceKeyword2 + " " + seoInfo.localKeyword1,
+  seoKeyword8: seoInfo.serviceKeyword2 + " " + seoInfo.localKeyword2,
+
+  seoKeyword9: seoInfo.serviceKeyword3 + " " + seoInfo.localKeyword1,
+  seoKeyword10: seoInfo.serviceKeyword3 + " " + seoInfo.localKeyword2,
+
+  seoKeyword11: seoInfo.serviceKeyword4 + " " + seoInfo.localKeyword1,
+  seoKeyword12: seoInfo.serviceKeyword4 + " " + seoInfo.localKeyword2,
+
+  seoKeyword13: seoInfo.serviceKeyword5 + " " + seoInfo.localKeyword1,
+  seoKeyword14: seoInfo.serviceKeyword5 + " " + seoInfo.localKeyword2,
+}
+
+const imageAlt = {
+  //Ảnh customer review - customer-review.js
+  cusReviewImage1Alt: seoKeyword.seoKeyword1,
+  cusReviewImage2Alt: seoKeyword.seoKeyword2,
+  cusReviewImage3Alt: seoKeyword.seoKeyword3,
+  cusReviewImage4Alt: seoKeyword.seoKeyword4,
+  cusReviewImage5Alt: seoKeyword.seoKeyword1,
 
   //Thanh Mobile Bottom Nav
-  BottomNavButton1Icon: "/images/icons/icon-home.png",
-  BottomNavButton1Content: "Home",
-  BottomNavButton1LinkTo: "/",
-
-  BottomNavButton2Icon: "/images/icons/icon-bussiness-services.png",
-  BottomNavButton2Content: "Services",
-  BottomNavButton2LinkTo: "/services",
-
-  BottomNavButton3Icon: "/images/icons/icon-contact.png",
-  BottomNavButton3Content: "Appointment now",  //Cái này chưa cho vào vì bị xuống dòng
-  BottomNavButton3LinkTo: "",
-
-  //Ảnh customer review - customer-review.js
-  cusReviewImage1: "/images/nail-salon-customer-review-1.jpg",
-  cusReviewImage2: "/images/nail-salon-customer-review-2.jpg",
-  cusReviewImage3: "/images/nail-salon-customer-review-3.jpg",
-  cusReviewImage4: "/images/nail-salon-customer-review-4.jpg",
-  cusReviewImage5: "/images/nail-salon-customer-review-5.jpg",
-
+  BottomNavButton1IconAlt: seoKeyword.seoKeyword1,
+  BottomNavButton2IconAlt: seoKeyword.seoKeyword2,
+  BottomNavButton3IconAlt: seoKeyword.seoKeyword3,
 
   //Ảnh Footer
-  footerImagePhoneIcon: "/images/icons/icon-phone-product.png",
-  footerImageMapPointerIcon: "/images/icons/icon-google-maps-pointer.png",
+  footerImagePhoneIconAlt: seoKeyword.seoKeyword1,
+  footerImageMapPointerIconAlt: seoKeyword.seoKeyword1,
 
-  //Phần footer copyright
-  websiteLink: "https://bestsalonmarketing.com",
+  //Ảnh trang about cho 3 giao diện
+  mobileAboutUsImage1Alt: seoKeyword.seoKeyword1,
+  mobileAboutUsImage2Alt: seoKeyword.seoKeyword2,
+  mobileAboutUsImage3Alt: seoKeyword.seoKeyword3,
+  mobileAboutUsImage4Alt: seoKeyword.seoKeyword4,
+  mobileAboutUsImage5Alt: seoKeyword.seoKeyword5,
+
+  tabletAboutUsImage1Alt: seoKeyword.seoKeyword1,
+  tabletAboutUsImage2Alt: seoKeyword.seoKeyword2,
+  tabletAboutUsImage3Alt: seoKeyword.seoKeyword3,
+  tabletAboutUsImage4Alt: seoKeyword.seoKeyword4,
+  tabletAboutUsImage5Alt: seoKeyword.seoKeyword5,
+
+  desktopAboutUsImage1Alt: seoKeyword.seoKeyword1,
+  desktopAboutUsImage2Alt: seoKeyword.seoKeyword2,
+  desktopAboutUsImage3Alt: seoKeyword.seoKeyword3,
+
+  desktopAboutUsDongVienImage1Alt: seoKeyword.seoKeyword1,
+  desktopAboutUsDongVienImage2Alt: seoKeyword.seoKeyword2,
+  desktopAboutUsDongVienImage3Alt: seoKeyword.seoKeyword3,
+
+  section1Image1Alt: seoKeyword.seoKeyword1,
+  section2Image1Alt: seoKeyword.seoKeyword2,
+  section3Image1Alt: seoKeyword.seoKeyword3,
+  section5Image1Alt: seoKeyword.seoKeyword4,
+  section6Image1Alt: seoKeyword.seoKeyword5,
+  section7Image1Alt: seoKeyword.seoKeyword6,
+  section7Image2Alt: seoKeyword.seoKeyword7,
+
+  mobileCarouselImage1Alt: seoKeyword.seoKeyword8,
+  mobileCarouselImage2Alt: seoKeyword.seoKeyword9,
+  mobileCarouselImage3Alt: seoKeyword.seoKeyword10,
+
+  tabletCarouselImage1Alt: seoKeyword.seoKeyword8,
+  tabletCarouselImage2Alt: seoKeyword.seoKeyword9,
+  tabletCarouselImage3Alt: seoKeyword.seoKeyword10,
+
+  desktopCarouselImage1Alt: seoKeyword.seoKeyword8,
+  desktopCarouselImage2Alt: seoKeyword.seoKeyword9,
+  desktopCarouselImage3Alt: seoKeyword.seoKeyword10,
+
+  LocationImage1Alt: seoKeyword.seoKeyword1,
+
+  serviceList1Image1Alt: seoKeyword.seoKeyword7,
+  serviceList1Image2Alt: seoKeyword.seoKeyword7,
+  serviceList1Image3Alt: seoKeyword.seoKeyword7,
+  serviceList1Image4Alt: seoKeyword.seoKeyword8,
+  serviceList1Image5Alt: seoKeyword.seoKeyword8,
+
+  serviceList2Image1Alt: seoKeyword.seoKeyword9,
+  serviceList2Image2Alt: seoKeyword.seoKeyword9,
+  serviceList2Image3Alt: seoKeyword.seoKeyword9,
+  serviceList2Image4Alt: seoKeyword.seoKeyword10,
+  serviceList2Image5Alt: seoKeyword.seoKeyword10,
+
+  serviceList3Image1Alt: seoKeyword.seoKeyword11,
+  serviceList3Image2Alt: seoKeyword.seoKeyword12,
+  serviceList3Image3Alt: seoKeyword.seoKeyword13,
+  serviceList3Image4Alt: seoKeyword.seoKeyword14,
+  serviceList3Image5Alt: seoKeyword.seoKeyword14,
+
+  serviceList4Image1Alt: "hair wash" + " " + changedInfo.businessAddressLevel2,
+  serviceList4Image2Alt: "hair wash" + " " + changedInfo.businessAddressLevel2,
+  serviceList4Image3Alt: "hair wash" + " " + changedInfo.businessAddressLevel2,
+  serviceList4Image4Alt: "hair wash" + " " + changedInfo.businessAddressLevel2,
+  serviceList4Image5Alt: "hair wash" + " " + changedInfo.businessAddressLevel2,
+
+  serviceList5Image1Alt: "nail design" + " " + changedInfo.businessAddressLevel2,
+  serviceList5Image2Alt: "nail design" + " " + changedInfo.businessAddressLevel2,
+  serviceList5Image3Alt: "nail design" + " " + changedInfo.businessAddressLevel2,
+  serviceList5Image4Alt: "nail design" + " " + changedInfo.businessAddressLevel2,
+  serviceList5Image5Alt: "nail design" + " " + changedInfo.businessAddressLevel2,
+
+  serviceList6Image1Alt: "waxing" + " " + changedInfo.businessAddressLevel2,
+  serviceList6Image2Alt: "waxing" + " " + changedInfo.businessAddressLevel2,
+  serviceList6Image3Alt: "waxing" + " " + changedInfo.businessAddressLevel2,
+  serviceList6Image4Alt: "waxing" + " " + changedInfo.businessAddressLevel2,
+  serviceList6Image5Alt: "waxing" + " " + changedInfo.businessAddressLevel2,
+
+  serviceList7Image1Alt: "facial" + " " + changedInfo.businessAddressLevel2,
+  serviceList7Image2Alt: "facial" + " " + changedInfo.businessAddressLevel2,
+  serviceList7Image3Alt: "facial" + " " + changedInfo.businessAddressLevel2,
+  serviceList7Image4Alt: "facial" + " " + changedInfo.businessAddressLevel2,
+  serviceList7Image5Alt: "facial" + " " + changedInfo.businessAddressLevel2,
+}
+
+const processedInfo = {
+  //Xử lý Slogan tiệm
+  slogan: "The best " + seoKeyword.seoKeyword1 + " - " + changedInfo.businessName,
+
+  //Dòng full address của tiệm
+  businessAddress: changedInfo.businessAddressLevel1 + ", " + changedInfo.businessAddressLevel2 + ", " + changedInfo.businessPostCode,
+
+  callBusiness: `tel:${changedInfo.businessPhoneNumber}`,
+
+  //Link booking thực sự của tiệm sửa ở đây
+  businessBookingLink: changedInfo.linkBookingApp,
+
+  //offer.js
+  offerTitle: "Our Offers and Benefits",
+  offerDescription: "",
+  offerHeading: "Our offers:",
+  offerContent1: "✅10% discount for Student and NHS worker.",
+  offerContent2: "✅Get 10% off your third visit and 25% off your sixth visit with our loyalty card.",
+  offerContent3: "",
+}
+
+const headerInput = {
+  headerTitle: "The best " + seoKeyword.seoKeyword15 + ", " + seoInfo.localKeyword2 + ", UK" + " - " + changedInfo.businessName,
+  metaDescription: "We are one of the best " + seoKeyword.seoKeyword1 + ". " + "Please come and make yourself at home here at our nail salon. " + seoInfo.localKeyword1,
+  relIcon: changedInfo.icon,
+  relCanonical: changedInfo.businessWebsite,
+  metaGeoPosition: changedInfo.geoLatitude + ", " + changedInfo.geoLongitude,
+  metaGeoPlaceName: changedInfo.businessAddressLevel2 + ", " + changedInfo.businessCountry,
+  metaGeoRegion: changedInfo.businessGeoRegionCode + "-" + changedInfo.businessAddressDivisionCode,
+
+  metaOgSiteName: changedInfo.businessName,
+  metaOgLocale: "en_GB",
+
+  metaOgTitle: processedInfo.slogan,
+  metaOgImage: changedInfo.ogImage,
+  metaOgImageWidth: "1920",
+  metaOgImageHeight: "1073",
+
+  metaGoogleSiteVerification: changedInfo.metaGoogleSiteVerification,
+}
 
 
-  //Các nút trên website, hiện chưa áp dụng
+//Cần sửa trong mục này
+const schemaInput = {
+  schemaType: "NailSalon",
+  schemaName: changedInfo.businessName,
+  schemaStreetAddress: changedInfo.businessAddressLevel1,
+  schemaAddressLocality: changedInfo.businessAddressLevel2,
+  schemaAddressRegion: changedInfo.businessAddressLevel4,
+  schemaPostalCode: changedInfo.businessPostCode,
+  schemaAddressCountry: changedInfo.businessGeoRegionCode,
+
+  schemaImage1: "/images/nail-extension-1.jpg",
+  schemaImage2: "/images/nail-extension-2.jpg",
+  schemaImage3: "/images/nail-extension-3.jpg",
+  schemaImage4: "/images/nail-extension-4.jpg",
+  schemaImage5: "/images/nail-extension-5.jpg",
+  schemaImage6: "/images/gel-nails-shellac-nails-1.jpg",
+  schemaImage7: "/images/gel-nails-shellac-nails-2.jpg",
+  schemaImage8: "/images/gel-nails-shellac-nails-3.jpg",
+  schemaImage9: "/images/gel-nails-shellac-nails-4.jpg",
+  schemaImage10: "/images/gel-nails-shellac-nails-5.jpg",
+  schemaImage11: "/images/nail-design-1.jpg",
+  schemaImage12: "/images/nail-design-2.jpg",
+  schemaImage13: "/images/nail-design-3.jpg",
+  schemaImage14: "/images/nail-design-4.jpg",
+  schemaImage15: "/images/nail-design-5.jpg",
+  schemaImage16: "/images/pedicure-1.jpg",
+  schemaImage17: "/images/pedicure-2.jpg",
+  schemaImage18: "/images/pedicure-3.jpg",
+  schemaImage19: "/images/pedicure-4.jpg",
+  schemaImage20: "/images/pedicure-5.jpg",
+
+  schemaTelephone: changedInfo.businessPhoneNumber,
+
+  //Thời gian làm việc của tiệm
+  schemaMonOpeningTime: businessOpeningTimeInput.monOpeningTime,
+  schemaMonClosingTime: businessOpeningTimeInput.monClosingTime,
+
+  schemaTueOpeningTime: businessOpeningTimeInput.tueOpeningTime,
+  schemaTueClosingTime: businessOpeningTimeInput.tueClosingTime,
+
+  schemaWedOpeningTime: businessOpeningTimeInput.wedOpeningTime,
+  schemaWedClosingTime: businessOpeningTimeInput.wedClosingTime,
+
+  schemaThuOpeningTime: businessOpeningTimeInput.thuOpeningTime,
+  schemaThuClosingTime: businessOpeningTimeInput.thuClosingTime,
+
+  schemaFriOpeningTime: businessOpeningTimeInput.friOpeningTime,
+  schemaFriClosingTime: businessOpeningTimeInput.friClosingTime,
+
+  schemaSatOpeningTime: businessOpeningTimeInput.satOpeningTime,
+  schemaSatClosingTime: businessOpeningTimeInput.satClosingTime,
+
+  schemaSunOpeningTime: businessOpeningTimeInput.sunOpeningTime,
+  schemaSunClosingTime: businessOpeningTimeInput.sunClosingTime,
+
+  //Logo
+  schemaLogo: changedInfo.businessWebsite + changedInfo.businessLogo,
+
+  //Đơn vị tiền tệ chấp nhận thanh toán
+  schemaCurrenciesAccepted: "GBP",
+  schemaPaymentAccepted: ["cash", "credit card"],
+
+  schemaPriceRange: "££",
+  //Cần đổi tên khách
+  schemaPersonReviewAuthorName: "Dorothy sheehan",
+  //Xem điểm review trung bình của tiệm là bao nhiêu   , 
+  schemaRatingValue: "5",
+  schemaBestRating: "5",
+
+  schemaGeoLatitude: 50.737739190260825,
+  schemaLongitude: -1.7809925652348297,
+
+  schemaUrl: changedInfo.businessWebsite,
+
+  schemaHasMap: changedInfo.linkToMap,
+  schemaKeywords: [seoKeyword.seoKeyword1,
+  seoKeyword.seoKeyword2,
+  seoKeyword.seoKeyword3,
+  seoKeyword.seoKeyword4,
+  seoKeyword.seoKeyword5,
+  seoKeyword.seoKeyword6,
+  seoKeyword.seoKeyword7,
+  seoKeyword.seoKeyword8,
+  seoKeyword.seoKeyword9,
+  seoKeyword.seoKeyword10,
+  seoKeyword.seoKeyword11,
+  seoKeyword.seoKeyword12,
+  ],
+  schemaSlogan: processedInfo.slogan,
+  schemaDescription: headerInput.metaDescription,
+}
+
+//Dữ liệu schema
+const schemaData = {
+  "@context": "http://schema.org",
+  "@type": schemaInput.schemaType,
+  "name": schemaInput.schemaName,
+  "image": [
+    schemaInput.schemaImage1,
+    schemaInput.schemaImage2,
+    schemaInput.schemaImage3,
+    schemaInput.schemaImage4,
+    schemaInput.schemaImage5,
+    schemaInput.schemaImage6,
+    schemaInput.schemaImage7,
+    schemaInput.schemaImage8,
+    schemaInput.schemaImage9,
+    schemaInput.schemaImage10,
+    schemaInput.schemaImage11,
+    schemaInput.schemaImage12,
+    schemaInput.schemaImage13,
+    schemaInput.schemaImage14,
+    schemaInput.schemaImage15,
+    schemaInput.schemaImage16,
+    schemaInput.schemaImage17,
+    schemaInput.schemaImage18,
+    schemaInput.schemaImage19,
+    schemaInput.schemaImage20,
+  ],
+  "telephone": schemaInput.schemaTelephone,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": schemaInput.schemaStreetAddress,
+    "addressLocality": schemaInput.schemaAddressLocality,
+    "addressRegion": schemaInput.schemaAddressRegion,
+    "postalCode": schemaInput.schemaPostalCode,
+    "addressCountry": schemaInput.schemaAddressCountry,
+  },
+  "currenciesAccepted": schemaInput.schemaCurrenciesAccepted,
+  "paymentAccepted": schemaInput.schemaPaymentAccepted,
+  "logo": schemaInput.schemaLogo,
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": schemaInput.schemaRatingValue,
+      "bestRating": schemaInput.schemaBestRating,
+    },
+    "author": {
+      "@type": "Person",
+      "name": schemaInput.schemaPersonReviewAuthorName,
+    },
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": schemaInput.schemaGeoLatitude,
+    "longitude": schemaInput.schemaLongitude,
+  },
+  "url": schemaInput.schemaUrl,
+  "priceRange": schemaInput.schemaPriceRange,
+  //Giờ mở cửa của tiệm khai báo lên Schema
+  //Nếu ko mở ngày nào thì xóa ngày đó đi
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": schemaInput.schemaMonOpeningTime,
+      "closes": schemaInput.schemaMonOpeningTime,
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": schemaInput.schemaTueOpeningTime,
+      "closes": schemaInput.schemaTueClosingTime,
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": schemaInput.schemaWedOpeningTime,
+      "closes": schemaInput.schemaWedClosingTime,
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": schemaInput.schemaThuOpeningTime,
+      "closes": schemaInput.schemaThuClosingTime,
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": schemaInput.schemaFriOpeningTime,
+      "closes": schemaInput.schemaFriClosingTime,
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": schemaInput.schemaSatOpeningTime,
+      "closes": schemaInput.schemaSatClosingTime,
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": schemaInput.schemaSunOpeningTime,
+      "closes": schemaInput.schemaSunClosingTime,
+    },
+  ],
+  "hasMap": schemaInput.schemaHasMap,
+  "keywords": schemaInput.schemaKeywords,
+  "slogan": schemaInput.schemaSlogan,
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Book an appointment or asking question",
+    "telephone": schemaInput.schemaTelephone,
+  },
+  "description": schemaInput.schemaDescription,
+}
+
+//Nội dung trên phần thân trang thì cho vào đây
+const pageContent = {
+  //our-story.js
+  ourStoryHeading: "Our story",
+  ourStoryDescription: "Located at " + changedInfo.businessAddressLevel1 + ", we are a nail shop in " + changedInfo.businessAddressLevel2 + ". Skilled manicurists and pedicurists look forward to bringing you the best products and services. We are always researching and learning the best products and services, trendy nails, to bring more and more satisfaction to customers who are coming to us.",
+
+  //dong-vien-1.js
+  section1Heading: "We are experienced manicurists and pedicurists in " + seoInfo.localKeyword1,
+  section1Description: "Are you looking for nail salon in " + changedInfo.businessAddressLevel2 + "? One of the best nail salon in " + changedInfo.businessAddressLevel3 + "? We are proud to say that here we are. We can give you amazing nails with our acrylic extensions and great relaxation with our manicure and pedicure services. We cater to both men and women. You can rest assured and get a sense of satisfaction when you come to us",
+
+  //dong-vien-2.js
+  section2Heading: "Always clean",
+  section2Description: "We are committed to the safety and well being of our customer therefore we always maintain our clean environment, clean work stations, clean employees, and sterilization practices.",
+
+  //dong-vien-3.js
+  section3Heading: "Always leading And Ethical",
+  section3Description: "We guarantee to bring you the best experience ever. Our mission is to provide our customers with the ultimate pampering experience beginning with a beverage in one hand, a social scene in-between and a stunning set of services.",
+
+  // nhan-manh-1.js
+  section4Heading: "For your happiness, for your smile. For you! ",
+
+  // nhan-manh-2.js
+  section5Heading: "STYLE LAST LONGER THAN POLISH",
+  section5Description: "At our " + seoKeyword.seoKeyword15 + ", we seek to provide a premier experience for our clients and create an eco-conscious environment for the people we serve. While maintaining an affordable price point, we combine modern and comfortable furnishings, with skilled technicians to provide fresh products and an exclusive menu of desired treatments. 😘😘😘",
+
+  // nhan-manh-3.js
+  section6Heading: "OUR MISSION",
+  section6Description: "Join us in our " + seoKeyword.seoKeyword15 + " mission. We leave no stone unturned to give you the feeling of pampering, whether it is a manicure or pedicure, our dedicated team of beauty experts aims to make you feel like a queen through lifetime services. 🥰🥰🥰",
+
+  // nhan-manh-4.js
+  section7Heading: "SERVICES",
+  section7Description: "Looking for a " + seoKeyword.seoKeyword1 + " to get your nails done with professionalism and style? Find you the perfect goal with our salon and let your fingers do the talking! We offer quality customer service, so you can expect to get a manicure or pedicure like never before.",
+
+  // nhan-manh-5.js
+  section8Heading: "ENJOYABLE & RELAXATION",
+  section8Description: "Imagine your " + seoKeyword.seoKeyword15 + " as your go-to beauty haven, where you’ll always feel like a million dollars.You deserve healthy, clean nails for a fraction of the price and time. Let our top-notch specialists handle it for you and leave with that feeling of satisfaction⁣",
+
+  carouselHeading: "From the best nail shop in " + changedInfo.businessAddressLevel2 + ", manicures never have to stop.",
+
+  customerReviewHeading: "WHAT OUR CUSTOMERS SAY",
+  customerReviewDescription: "",
+
+  //content-our-policy.js
+  contentOurPolicyHeadingMain: "OUR POLICIES",
+  contentOurPolicyHeadingSmall1: "Refunds",
+  contentOurPolicyHeadingSmall2: "Guarantee",
+  contentOurPolicyHeadingSmall3: "Tardiness",
+  contentOurPolicyHeadingSmall4: "Cancellations",
+  contentOurPolicyHeadingSmall5: "Gift Cards",
+  contentOurPolicyDescription1: "At " + changedInfo.businessName + ", we will do anything we can to make sure you are satisfied. You are never just a customer, you’re part of the family. If your nails are not up to your expectations or if there’s something we can do to rectify it, speak up and let us know.    No refunds will be given after you have left the salon.",
+  contentOurPolicyDescription2: "Enhancements and gel polish manicures are guaranteed for 7 business days after your appointment; excluding breakages. If you lose an enhancement or notice chips or lifting in the first seven days, please call us to schedule a free repair. Repairs after 7 days or for breakages, tears, and corner breaks are charged. Be kind to your nails and they will look beautiful for weeks after your service. Traditional polish services are not guaranteed.",
+  contentOurPolicyDescription3: "Scheduled appointments have a 15 minute grace period to allow for traffic snarls or parking difficulties. If you anticipate that you will be later than 15 minutes, please call ahead to see if we have the availability to complete your service in full. One late client can throw off our entire schedule and cause our other clients to be late for their commitments. Therefore, if you arrive more than 15 minutes late, we reserve the right to refuse partial or complete services.",
+  contentOurPolicyDescription41: "Appointments can be cancelled 24 hours in advance by calling or texting ",
+  contentOurPolicyDescription42: ". Please give at least 24 hours notice so that we have the opportunity to offer your reserved time to another client on our waiting list. We understand that sometimes emergencies happen, and it's not always possible to give adequate notice when you can't make an appointment. However, be aware that if you repeatedly cancel appointments without proper notice, we reserve the right to ask for a non-refundable deposit to secure your next appointment.",
+  contentOurPolicyDescription5: "The Gift Card and its balance are valid for a period of six months from the date of purchase. Your Gift Card will cease to be valid six months from the date of purchase and you will no longer be entitled to use it. ",
+
+  //service-1.js
+  serviceCategory1Description: "The nail extensions that you can get at our " + seoKeyword.seoKeyword15 + " are so beautiful! They are easy to put on, and they last for two whole weeks on average.  Our " + seoKeyword.seoKeyword15 + " was also built to be very comfy for customers. ✔ They last for up",
+
+  //service-2.js
+  serviceCategory2Description: "The gel polish manicure is made for people who want a manicure that lasts days! We’ve got the best deals so come stop by today! There’s nothing like dazzling, long-lasting nails. “Gel-polish” technology is designed to last up to 2 weeks – perfect for people who are always on the go.",
+
+  //service-3.js
+  serviceCategory3Description: "Who doesn’t love a fresh, clean, and colorful mani or pedi? The folks over at our " + seoKeyword.seoKeyword15 + " want you to feel pampered, and are here for your every nail and beauty need day or night. Rituals and time-savers! That’s what our staff is here for!",
+
+  //service-4.js
+  serviceCategory4Description: "When you’re treating yourself to a pampering appointment with us, you deserve good things! Our soothing & relaxing services have you feeling like a new person. Imagine feeling the heated water on your scalp while the shampoo scrubs away impurities. Imagine feeling more refreshed and relaxed than ever with our Indian head massage therapy.",
+
+  //service-5.js
+  serviceCategory5Description: "Spruce up your nails from the usual nail polish tone to that of a Celebrity! Inspire others by showing off your creativity and get compliments from near and far! We are proud to be one of the " + seoInfo.localKeyword1 + " leading professional nail artists.",
+
+  //service-6.js
+  serviceCategory6Description: "We offer waxing service. Our estheticians use the latest techniques and products to ensure your hair removal experience is as smooth and gentle as possible.",
+
+  //service-7.js
+  serviceCategory7Description: "It’s time to pamper yourself and forget about the day’s stress 🌸. No question, we know that being healthy is the best beauty tip. Come have a facial with us and learn how to take care of your skin so you can look and feel beautiful everyday.",
+
+  locationHeading: "LOCATION",
+  timeScheduleHeading: "OPENING HOURS",
+
+  copyrightContent: "© Copyright and Powered by Best Salon Marketing",
+  copyrightWebsiteLink: "https://bestsalonmarketing.com",
+}
+
+const button = {
+  //Các nút trên website
   button1Content: "Learn more",
   button1LinkToMobile: "#m-section-1",
   button1LinkToTablet: "#t-section-1",
   button1LinkToDesktop: "#d-section-1",
-  
-  button1ID: "a",
-  
 
-  button2Content: "",
-  button2LinkToMobile: "",
-  button2LinkToTablet: "",
-  button2LinkToDesktop: "",
+  button2Content: "View Our Services",
+  button2LinkTo: menu.linkToMainMenu4,
 
-  button3Content: "",
-  button3LinkTo: "",
+  button3Content: "Book Appointment",
+  button3LinkTo: menu.linkToMainMenu3,
 
-  button4Content: "",
-  button4LinkTo: "",
+  button4Content: "Find us",
+  button4LinkTo: changedInfo.linkToMap,
 
-  button5Content: "",
-  button5LinkTo: "",
+  button5Content: "Full list of our services",
+  button5LinkTo: menu.linkToMainMenu4,
 
   button6Content: "View details services",
   button6LinkToMobile: "/services/#m-service-list-1",
@@ -265,215 +713,127 @@ const thongTinTiem1 = {
   button12LinkToMobile: "/services/#m-service-list-7",
   button12LinkToTablet: "/services/#t-service-list-7",
   button12LinkToDesktop: "/services/#d-service-list-7",
+}
 
-};
+const images = {
+  //Ảnh ở Homepage carousel
+  mobileCarouselImage1: "/images/mobile-nail-salon-happy-customer-1.jpg",
+  mobileCarouselImage2: "/images/mobile-nail-salon-happy-customer-2.jpg",
+  mobileCarouselImage3: "/images/mobile-nail-salon-happy-customer-3.jpg",
 
-const thongTinTiem2 = {
-  //Xử lý Slogan tiệm
-  sloganTiem: "The best nail salon in " + thongTinTiem1.areaTiem + " - " +  thongTinTiem1.tenTiem,
+  tabletCarouselImage1: "/images/tablet-nail-salon-happy-customer-1.jpg",
+  tabletCarouselImage2: "/images/tablet-nail-salon-happy-customer-2.jpg",
+  tabletCarouselImage3: "/images/tablet-nail-salon-happy-customer-3.jpg",
 
-  //Dòng full address của tiệm
-  addressTiemTopBar: thongTinTiem1.addressTiemLine1 + ", " + thongTinTiem1.areaTiem + ", " + thongTinTiem1.postcodeTiem,
+  desktopCarouselImage1: "/images/desktop-nail-salon-happy-customer-1.jpg",
+  desktopCarouselImage2: "/images/desktop-nail-salon-happy-customer-2.jpg",
+  desktopCarouselImage3: "/images/desktop-nail-salon-happy-customer-3.jpg",
+  //Ảnh ở Homepage khi vuốt xuống
+  section5Image1: "/images/nail-extension-1.jpg",
 
-  //Xử lý gọi cho tiệm
-  callTiem:`tel:${thongTinTiem1.phoneTiem}`,
+  section6Image1: "/images/nail-extension-2.jpg",
 
-  metaDescriptionContent: "We are one of the best nail salons in" + " " + thongTinTiem1.areaTiem + ". " + "Please come and make yourself at home here at our nail salon." + " " + thongTinTiem1.areaTiem,
+  section7Image1: "/images/nail-extension-3.jpg",
+  section7Image2: "/images/nail-extension-4.jpg",
 
-  geoPlaceNameContent: thongTinTiem1.areaTiem + ", " + thongTinTiem1.countryTiem,
+  LocationImage1: "/images/nail-extension-11.jpg",
 
-  linkBookingTiem: thongTinTiem1.linkAppBookingTiem,
+  serviceList1Image1: "/images/nail-extension-5.jpg",
+  serviceList1Image2: "/images/nail-extension-6.jpg",
+  serviceList1Image3: "/images/nail-extension-7.jpg",
+  serviceList1Image4: "/images/nail-extension-8.jpg",
+  serviceList1Image5: "/images/nail-extension-9.jpg",
 
-  TimeScheduleDescription:"What are you waiting for? Come get your paws groomed! At " + thongTinTiem1.tenTiem + " we work hard to make every experience feel comfortable, personalized and relaxing. Let our experienced technicians groom your paws.",
+  serviceList2Image1: "/images/gel-nails-shellac-nails-1.jpg",
+  serviceList2Image2: "/images/gel-nails-shellac-nails-2.jpg",
+  serviceList2Image3: "/images/gel-nails-shellac-nails-3.jpg",
+  serviceList2Image4: "/images/gel-nails-shellac-nails-4.jpg",
+  serviceList2Image5: "/images/gel-nails-shellac-nails-5.jpg",
 
-  //our-story.js
-    ourStoryHeading: "Our story",
-    ourStoryDescription: "Located at " + thongTinTiem1.addressTiemLine1 + ", we are a nail shop in " + thongTinTiem1.districtTiem + ". Skilled manicurists and pedicurists look forward to bringing you the best products and services. We are always researching and learning the best products and services, trendy nails, to bring more and more satisfaction to customers who are coming to us.",
+  serviceList3Image1: "/images/pedicure-1.jpg",
+  serviceList3Image2: "/images/pedicure-2.jpg",
+  serviceList3Image3: "/images/pedicure-3.jpg",
+  serviceList3Image4: "/images/pedicure-4.jpg",
+  serviceList3Image5: "/images/pedicure-5.jpg",
 
-  //dong-vien-1.js
-    dongVien1Heading: "We are experienced manicurists and pedicurists in " + thongTinTiem1.areaTiem ,
-    dongVien1Description: "Are you looking for nail shops in " + thongTinTiem1.areaTiem + "? One of the best nail salon in " + thongTinTiem1.cityTiem + "? We are proud to say that here we are. We can give you amazing nails with our acrylic extensions and great relaxation with our manicure and pedicure services. We cater to both men and women. You can rest assured and get a sense of satisfaction when you come to us",
-    dongVien1Image1Alt: "nail salon" + " " + thongTinTiem1.areaTiem,
+  serviceList4Image1: "/images/hair-wash-1.jpg",
+  serviceList4Image2: "/images/hair-wash-2.jpg",
+  serviceList4Image3: "/images/hair-wash-3.jpg",
+  serviceList4Image4: "/images/hair-wash-4.jpg",
+  serviceList4Image5: "/images/hair-wash-5.jpg",
 
-  //dong-vien-2.js
-    dongVien2Heading: "Always clean",
-    dongVien2Description: "We are committed to the safety and well being of our customer therefore we always maintain our clean environment, clean work stations, clean employees, and sterilization practices.",
-    dongVien2Image1Alt: "nail salon" + " " + thongTinTiem1.areaTiem,
+  serviceList5Image1: "/images/nail-design-1.jpg",
+  serviceList5Image2: "/images/nail-design-2.jpg",
+  serviceList5Image3: "/images/nail-design-3.jpg",
+  serviceList5Image4: "/images/nail-design-4.jpg",
+  serviceList5Image5: "/images/nail-design-5.jpg",
 
-  //dong-vien-3.js
-    dongVien3Heading: "Always leading And Ethical",
-    dongVien3Description: "We guarantee to bring you the best experience ever. Our mission is to provide our customers with the ultimate pampering experience beginning with a beverage in one hand, a social scene in-between and a stunning set of services.",
+  serviceList6Image1: "/images/waxing-1.jpg",
+  serviceList6Image2: "/images/waxing-2.jpg",
+  serviceList6Image3: "/images/waxing-3.jpg",
+  serviceList6Image4: "",
+  serviceList6Image5: "",
 
-  // nhan-manh-1.js
-    NhanhManh1Content: "For your happiness, for your smile. For you!",
-  
-  // nhan-manh-2.js
-    NhanhManh2Heading: "STYLE LAST LONGER THAN POLISH",
-    NhanhManh2Content: "At our nail salon " + thongTinTiem1.areaTiem + ", we seek to provide a premier experience for our clients and create an eco-conscious environment for the people we serve. While maintaining an affordable price point, we combine modern and comfortable furnishings, with skilled technicians to provide fresh products and an exclusive menu of desired treatments. 😘😘😘",
-     
-    NhanhManh2Image1Alt: "nail salon" + " " + thongTinTiem1.areaTiem,
-  
-  // nhan-manh-3.js
-    NhanhManh3Heading: "OUR MISSION",
-    NhanhManh3Content: "Join us in our nail salon " + thongTinTiem1.areaTiem + " mission. We leave no stone unturned to give you the feeling of pampering, whether it is a manicure or pedicure, our dedicated team of beauty experts aims to make you feel like a queen through lifetime services. 🥰🥰🥰",
-    NhanhManh3Image1Alt: "our nail salon mission" + " " + thongTinTiem1.areaTiem,
-  
-  // nhan-manh-4.js
-    NhanhManh4Heading: "SERVICES",
-    NhanhManh4Content: "Looking for a nail salon " + thongTinTiem1.areaTiem + " to get your nails done with professionalism and style? Find you the perfect goal with our salon and let your fingers do the talking! We offer quality customer service, so you can expect to get a manicure or pedicure like never before.",
-    NhanhManh4Image1Alt: "our nail salon service" + " " + thongTinTiem1.areaTiem,
-    NhanhManh4Image2Alt: "our nail salon service" + " " + thongTinTiem1.areaTiem,
-  
-    NhanhManh5Heading: "ENJOYABLE & RELAXATION",
-    NhanhManh5Content: "Imagine your nail salon " + thongTinTiem1.areaTiem + " as your go-to beauty haven, where you’ll always feel like a million dollars.You deserve healthy, clean nails for a fraction of the price and time. Let our top-notch specialists handle it for you and leave with that feeling of satisfaction⁣",
-
-  //service-1.js
-  mainService1Description: "The nail extensions that you can get at our nail salon " + thongTinTiem1.areaTiem + " are so beautiful! They are easy to put on, and they last for two whole weeks on average.  Our nail salon " + thongTinTiem1.areaTiem + " was also built to be very comfy for customers. ✔ They last for up",
-  
-  //service-2.js
-  mainService2Description: "The gel polish manicure is made for people who want a manicure that lasts days! We’ve got the best deals so come stop by today! There’s nothing like dazzling, long-lasting nails. “Gel-polish” technology is designed to last up to 2 weeks – perfect for people who are always on the go.",
-  
-  //service-3.js
-  mainService3Description: "Who doesn’t love a fresh, clean, and colorful mani or pedi? The folks over at our nail salon " + thongTinTiem1.areaTiem + " want you to feel pampered, and are here for your every nail and beauty need day or night. Rituals and time-savers! That’s what our staff is here for!",
-  
-  //service-4.js
-  mainService4Description: "When you’re treating yourself to a pampering appointment with us, you deserve good things! Our soothing & relaxing services have you feeling like a new person. Imagine feeling the heated water on your scalp while the shampoo scrubs away impurities. Imagine feeling more refreshed and relaxed than ever with our Indian head massage therapy.",
-  
-  //service-5.js
-  mainService5Description: "Spruce up your nails from the usual nail polish tone to that of a Celebrity! Inspire others by showing off your creativity and get compliments from near and far! " +
-  "We are proud to be one of the " + thongTinTiem1.areaTiem + " leading professional nail artists.",
-  
-  //service-6.js
-  mainService6Description: "We offer waxing service. Our estheticians use the latest techniques and products to ensure your hair removal experience is as smooth and gentle as possible.",
-
-  //service-7.js
-  mainService7Description: "It’s time to pamper yourself and forget about the day’s stress 🌸. No question, we know that being healthy is the best beauty tip. Come have a facial with us and learn how to take care of your skin so you can look and feel beautiful everyday.",
-
-  mobileCarouselImage1Alt: "",
-  mobileCarouselImage2Alt: "",
-  mobileCarouselImage3Alt: "",
-
-  tabletCarouselImage1Alt: "",
-  tabletCarouselImage2Alt: "",
-  tabletCarouselImage3Alt: "",
-
-  desktopCarouselImage1Alt: "",
-  desktopCarouselImage2Alt: "",
-  desktopCarouselImage3Alt: "",
-
-  LocationImage1Alt: "",
-
-  carouselHeading: "From the best nail shop in " + thongTinTiem1.areaTiem + ", manicures never have to stop.",
-
-  //Ảnh homepage khi vuốt xuống
-  serviceList1Image1Alt: "nail extension" + " " + thongTinTiem1.areaTiem,
-  serviceList1Image2Alt: "nail extension" + " " + thongTinTiem1.areaTiem,
-  serviceList1Image3Alt: "nail extension" + " " + thongTinTiem1.areaTiem,
-  serviceList1Image4Alt: "nail extension" + " " + thongTinTiem1.areaTiem,
-  serviceList1Image5Alt: "nail extension" + " " + thongTinTiem1.areaTiem,
-
-  serviceList2Image1Alt: "shellac nails" + " " + thongTinTiem1.areaTiem,
-  serviceList2Image2Alt: "shellac nails" + " " + thongTinTiem1.areaTiem,
-  serviceList2Image3Alt: "shellac nails" + " " + thongTinTiem1.areaTiem,
-  serviceList2Image4Alt: "shellac nails" + " " + thongTinTiem1.areaTiem,
-  serviceList2Image5Alt: "shellac nails" + " " + thongTinTiem1.areaTiem,
-  
-  serviceList3Image1Alt: "natural nail care" + " " + thongTinTiem1.areaTiem,
-  serviceList3Image2Alt: "natural nail care" + " " + thongTinTiem1.areaTiem,
-  serviceList3Image3Alt: "natural nail care" + " " + thongTinTiem1.areaTiem,
-  serviceList3Image4Alt: "natural nail care" + " " + thongTinTiem1.areaTiem,
-  serviceList3Image5Alt: "natural nail care" + " " + thongTinTiem1.areaTiem,
-
-  serviceList4Image1Alt: "hair wash" + " " + thongTinTiem1.areaTiem,
-  serviceList4Image2Alt: "hair wash" + " " + thongTinTiem1.areaTiem,
-  serviceList4Image3Alt: "hair wash" + " " + thongTinTiem1.areaTiem,
-  serviceList4Image4Alt: "hair wash" + " " + thongTinTiem1.areaTiem,
-  serviceList4Image5Alt: "hair wash" + " " + thongTinTiem1.areaTiem,
-
-  serviceList5Image1Alt: "nail design" + " " + thongTinTiem1.areaTiem,
-  serviceList5Image2Alt: "nail design" + " " + thongTinTiem1.areaTiem,
-  serviceList5Image3Alt: "nail design" + " " + thongTinTiem1.areaTiem,
-  serviceList5Image4Alt: "nail design" + " " + thongTinTiem1.areaTiem,
-  serviceList5Image5Alt: "nail design" + " " + thongTinTiem1.areaTiem,
-
-  serviceList6Image1Alt: "waxing" + " " + thongTinTiem1.areaTiem,
-  serviceList6Image2Alt: "waxing" + " " + thongTinTiem1.areaTiem,
-  serviceList6Image3Alt: "waxing" + " " + thongTinTiem1.areaTiem,
-  serviceList6Image4Alt: "waxing" + " " + thongTinTiem1.areaTiem,
-  serviceList6Image5Alt: "waxing" + " " + thongTinTiem1.areaTiem,
-
-  serviceList7Image1Alt: "facial" + " " + thongTinTiem1.areaTiem,
-  serviceList7Image2Alt: "facial" + " " + thongTinTiem1.areaTiem,
-  serviceList7Image3Alt: "facial" + " " + thongTinTiem1.areaTiem,
-  serviceList7Image4Alt: "facial" + " " + thongTinTiem1.areaTiem,
-  serviceList7Image5Alt: "facial" + " " + thongTinTiem1.areaTiem,
+  serviceList7Image1: "/images/facial-1.jpg",
+  serviceList7Image2: "/images/facial-2.jpg",
+  serviceList7Image3: "/images/facial-3.jpg",
+  serviceList7Image4: "/images/facial-4.jpg",
+  serviceList7Image5: "/images/facial-5.jpg",
 
   //Ảnh trang about cho 3 giao diện
 
-  mobileAboutUsImage1Alt: "",
-  mobileAboutUsImage2Alt: "",
-  mobileAboutUsImage3Alt: "",
-  mobileAboutUsImage4Alt: "",
-  mobileAboutUsImage5Alt: "",
+  mobileAboutUsImage1: "/images/mobile-nail-salon-1-2.jpg",
+  mobileAboutUsImage2: "/images/mobile-nail-salon-2-2.jpg",
+  mobileAboutUsImage3: "/images/mobile-nail-salon-3-2.jpg",
 
-  tabletAboutUsImage1Alt: "",
-  tabletAboutUsImage2Alt: "",
-  tabletAboutUsImage3Alt: "",
-  tabletAboutUsImage4Alt: "",
-  tabletAboutUsImage5Alt: "",
+  tabletAboutUsImage1: "/images/tablet-nail-salon-1-2.jpg",
+  tabletAboutUsImage2: "/images/tablet-nail-salon-2-2.jpg",
+  tabletAboutUsImage3: "/images/tablet-nail-salon-3-2.jpg",
 
-  desktopAboutUsImage1Alt: "",
-  desktopAboutUsImage2Alt: "",
-  desktopAboutUsImage3Alt: "",
+  desktopAboutUsImage1: "/images/desktop-nail-salon-1-2.jpg",
+  desktopAboutUsImage2: "/images/desktop-nail-salon-2-2.jpg",
+  desktopAboutUsImage3: "/images/desktop-nail-salon-3-2.jpg",
 
-  desktopAboutUsDongVienImage1Alt: "",
-  desktopAboutUsDongVienImage2Alt: "",
-  desktopAboutUsDongVienImage3Alt: "",
+  desktopAboutUsDongVienImage1: "/images/nail-extension-15.jpg",
+  desktopAboutUsDongVienImage2: "/images/nail-extension-16.jpg",
+  desktopAboutUsDongVienImage3: "/images/nail-extension-17.jpg",
 
-  //offer.js
-  offerTitle: "Our Offers and Benefits",
-  offerDescription: "",
-  offerHeading: "Our offers:",
-  offerContent1: "✅10% discount for Student and NHS worker. ",
-  offerContent2: "✅Get 10% off your third visit and 25% off your sixth visit with our loyalty card.",
-  offerContent3: "",
+  //Ảnh cho phần động viên
+  section1Image1: "/images/nail-extension-18.jpg",
+  section2Image1: "/images/nail-extension-19.jpg",
+  section3Image1: "/images/nail-extension-20.jpg",
 
-  //time-schedule.js
-  timeScheduleHeading: "OPENING HOURS",
+  //Thanh Mobile Bottom Nav
+  BottomNavButton1Icon: "/images/icons/icon-home.png",
+  BottomNavButton1Content: "Home",
+  BottomNavButton1LinkTo: "/",
 
-  //content-our-policy.js
-  contentOurPolicyHeadingMain: "OUR POLICIES",
-  contentOurPolicyHeadingSmall1: "Refunds",
-  contentOurPolicyHeadingSmall2: "Guarantee",
-  contentOurPolicyHeadingSmall3: "Tardiness",
-  contentOurPolicyHeadingSmall4: "Cancellations",
-  contentOurPolicyHeadingSmall5: "Gift Cards",
-  contentOurPolicyDescription1: "At " + thongTinTiem1.tenTiem +", we will do anything we can to make sure you are satisfied. You are never just a customer, you’re part of the family. If your nails are not up to your expectations or if there’s something we can do to rectify it, speak up and let us know.    No refunds will be given after you have left the salon.",
-  contentOurPolicyDescription2: "Enhancements and gel polish manicures are guaranteed for 7 business days after your appointment; excluding breakages. If you lose an enhancement or notice chips or lifting in the first seven days, please call us to schedule a free repair. Repairs after 7 days or for breakages, tears, and corner breaks are charged. Be kind to your nails and they will look beautiful for weeks after your service. Traditional polish services are not guaranteed.",
-  contentOurPolicyDescription3: "Scheduled appointments have a 15 minute grace period to allow for traffic snarls or parking difficulties. If you anticipate that you will be later than 15 minutes, please call ahead to see if we have the availability to complete your service in full. One late client can throw off our entire schedule and cause our other clients to be late for their commitments. Therefore, if you arrive more than 15 minutes late, we reserve the right to refuse partial or complete services.",
-  contentOurPolicyDescription41: "Appointments can be cancelled 24 hours in advance by calling or texting ",
-  contentOurPolicyDescription42: ". Please give at least 24 hours notice so that we have the opportunity to offer your reserved time to another client on our waiting list. We understand that sometimes emergencies happen, and it's not always possible to give adequate notice when you can't make an appointment. However, be aware that if you repeatedly cancel appointments without proper notice, we reserve the right to ask for a non-refundable deposit to secure your next appointment.",
-  contentOurPolicyDescription5: "The Gift Card and its balance are valid for a period of six months from the date of purchase. Your Gift Card will cease to be valid six months from the date of purchase and you will no longer be entitled to use it. ",
+  BottomNavButton2Icon: "/images/icons/icon-bussiness-services.png",
+  BottomNavButton2Content: "Services",
+  BottomNavButton2LinkTo: "/services",
+
+  BottomNavButton3Icon: "/images/icons/icon-contact.png",
+  BottomNavButton3Content: "Appointment now",  //Cái này chưa cho vào vì bị xuống dòng
+  BottomNavButton3LinkTo: "",
 
   //Ảnh customer review - customer-review.js
-  cusReviewImage1Alt: "",
-  cusReviewImage2Alt: "",
-  cusReviewImage3Alt: "",
-  cusReviewImage4Alt: "",
-  cusReviewImage5Alt: "",
-  
-  //Thanh Mobile Bottom Nav
-  BottomNavButton1IconAlt: "",
-  BottomNavButton2IconAlt: "",
-  BottomNavButton3IconAlt: "",
-  
-  //Ảnh Footer
-  footerImagePhoneIconAlt: "",
-  footerImageMapPointerIconAlt: "",
-  
-};
+  cusReviewImage1: "/images/nail-salon-customer-review-1.jpg",
+  cusReviewImage2: "/images/nail-salon-customer-review-2.jpg",
+  cusReviewImage3: "/images/nail-salon-customer-review-3.jpg",
+  cusReviewImage4: "/images/nail-salon-customer-review-4.jpg",
+  cusReviewImage5: "/images/nail-salon-customer-review-5.jpg",
 
-  
+  //Ảnh Footer
+  footerImagePhoneIcon: "/images/icons/icon-phone-product.png",
+  footerImageMapPointerIcon: "/images/icons/icon-google-maps-pointer.png",
+
+  //Phần footer copyright
+  //Phần này có thể chuyển sang chỗ khác
+}
+
+
+
+
 
 //Danh sách các dịch vụ
 const serviceList1 = {
@@ -496,7 +856,7 @@ const serviceList1 = {
   service4Time: "35 mins",
   service4Price: "27",
   service4Description: "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
-  
+
   service5: "Gel Powder Full Set with normal nail polish",
   service5Time: "45 mins",
   service5Price: "30",
@@ -700,7 +1060,7 @@ const serviceList1 = {
   service45: "Take off Acrylic",
   service45Time: "12 mins",
   service45Price: "30",
-  service45Description:"",
+  service45Description: "",
 
   service46: "Take off Acrylic Gel Colour and Redone a Newset",
   service46Time: "45 mins",
@@ -748,7 +1108,7 @@ const serviceList1 = {
   service54Description: "",
 
 
-}; 
+};
 
 const serviceList2 = {
   service1: "Nail shape with Shellac nails on hand",
@@ -812,7 +1172,7 @@ const serviceList3 = {
   service3Time: "40 mins",
   service3Price: "53",
   service3Description: "Get healthy, happy feet with the help of VOESH's Pedi in a Box Deluxe 4-Step pedicure system. This single-use pedicure kit contains a sea salt soak, sugar scrub, mud masque, and massage butter to detoxify, exfoliate, cleanse, and hydrate your skin. Plus Disposable Pedicure Pro Pack for use at the treatment or you can bring it home.",
-  
+
   service4: "Manicure & Pedicure with normal polish",
   service4Time: "1 hr 15 mins",
   service4Price: "43",
@@ -932,7 +1292,7 @@ const serviceList3 = {
   service27Time: "30 mins",
   service27Price: "25",
   service27Description: "",
-  
+
 };
 
 const serviceList4 = {
@@ -950,7 +1310,7 @@ const serviceList4 = {
   service3Time: "60 mins",
   service3Price: "70",
   service3Description: "A holistic hair beauty system, Ageloc Nutriol Scalp & Hair System product contain powerfull ingredients for a scientifically advance treatment that, when combined with Ageloc Galvanise Spa, delivers instant benefits for your hair and lasting results up to your sclap. Enjoy a healthier hair appearance that looks & feels thicker, fuller, stronger, softer, shinier. Invest in hair up to your scalp, it’s the crown you wear every day!",
-  
+
   service4: "",
   service4Time: "50 mins",
   service4Price: "35",
@@ -960,7 +1320,7 @@ const serviceList4 = {
   service5Time: "1 hr",
   service5Price: "55",
   service5Description: "",
-}; 
+};
 const serviceList5 = {
   service1: "Nail Design (from)",
   service1Time: "",
@@ -983,7 +1343,7 @@ const serviceList5 = {
   service4Description: "",
 
 
-}; 
+};
 
 const serviceList6 = {
   service1: "Eyebrow Shape",
@@ -1092,10 +1452,20 @@ const serviceList7 = {
   service4Time: "60 mins",
   service4Price: "70",
   service4Description: "Reduce fine line and restore skin to a more youthful look. Facial tissues are stimulatedfor an improved appearance. Provide facial toning, improves facial contouring, thereby making the skin look more voluminous: Tru Face, Features microcurrent technology, Clean & reduces pores.",
-}; 
+};
 
-export { thongTinTiem1 };
-export { thongTinTiem2 };
+export { changedInfo };
+export { processedInfo };
+export { images };
+export { imageAlt };
+export { processedBusinessOpeningTime };
+export { headerInput };
+export { schemaData };
+export { menu };
+export { serviceCategory };
+export { pageContent };
+export { button };
+
 export { serviceList1 };
 export { serviceList2 };
 export { serviceList3 };
@@ -1108,5 +1478,5 @@ export default function Info() {
   return (
     <>
     </>
-    );
-  }
+  );
+}

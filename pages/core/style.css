@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&ital@1&display=swap');
+
+
 /*
 */
 /*
@@ -33,21 +35,22 @@
       Trang Appointment
       Trang Our policy
 */
-  /*Đây là cho trang Home
+/*Đây là cho trang Home
   */
-    /* index.js
+/* index.js
     */
-  .page-container{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .page-content{
-    background-color: #FFFFFF;
-  }
+.page-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.page-content {
+  background-color: #FFFFFF;
+}
 
 /*
 2. Phần các yếu tố chung của website, bao gồm:
-  html
+  htmlF
   img
   a
   iframe
@@ -55,74 +58,85 @@
   button-model-1
   button-model-2
 */
-  /*Chống copy nội dung trang, tải ảnh....
+/*Chống copy nội dung trang, tải ảnh....
   */
+
   html{
-    -youbkit-touch-callout: none; /* iOS Safari */
-    -youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none;       /* IE 10+ and Edge */
+    -youbkit-touch-callout: none; 
+    -youbkit-user-select: none;   
+    -moz-user-select: none; 
+    -ms-user-select: none;      
     user-select: none;   
   }
+    
   /*
   */
-  img{
-    display: block;
-    max-width: 100%;
-    margin: auto;
-    border-radius: 10px;
-  }
-  a{
-    text-decoration: none;
-  }
-  .services-list-1,
-  .services-list-2,
-  .services-list-3,
-  .services-list-4,
-  .services-list-5,
-  .services-list-6{
-    text-decoration: none;
-    color: #8C96A8;
-  }
-  /*Chung cho việc hiển thị khối nội dung của các dịch vụ
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.services-list-1,
+.services-list-2,
+.services-list-3,
+.services-list-4,
+.services-list-5,
+.services-list-6,
+.services-list-7 {
+  text-decoration: none;
+  color: #8C96A8;
+}
+
+/*Chung cho việc hiển thị khối nội dung của các dịch vụ
   service-1.js
   service-2.js
   ...
   */
-  .service{
-    margin: auto;
-    margin-bottom: 30px;
-    background-color: #FFFFFF;
-    padding-bottom: 20px;
-  }
-  .service-content-anh{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0px;
-    text-align: center;
-    margin: auto;
-  }
-  .service-content-text{
-    margin-top: 35px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+.service {
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+}
 
-  }
-  .service-content-title{
+.service-content-anh {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0px;
+  text-align: center;
+  margin: auto;
+}
+
+.service-content-text {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+}
+
+.service-content-title {
   color: #000000;
   font-weight: bold;
   font-size: 36px;
   margin-bottom: 25px;
-  }
-  .service-content-description{
-    color: #8A94A6;
-    line-height: 1.8;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
-  }
+}
+
+.service-content-description {
+  color: #8A94A6;
+  line-height: 1.8;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
 /*
 */
 
@@ -131,139 +145,155 @@
   service-2-price-list.js
   ...
   */
-  .price-list-details-services{
-    margin-top: 50px;
-    margin-bottom: 65px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .price-list-details-services-container{
-    display: grid;
-    grid-template-columns: 9fr 1fr;
-  }
-  .price-list-details-services-item{
-    display: block;
-    margin-bottom: 10px;
-  }
-  .price-list-details-services-name{
-    color: #8A94A6;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  .price-list-details-services-name-notice{
-    font-size: 13px;
-    font-weight: 500;
-  }
-  .price-list-details-services-time{
-    font-size: 15px;
-  }
-  .price-list-details-services-description{
-    font-size: 15px;
-  }
-  .price-list-details-services-price{
-    color: #8A94A6;
-    font-weight: 500;
-    font-size: 18px;
-    margin-top: 5px;
-  }
-  .price-list-addition-info{
-    font-size: 15px;
-  }
+.price-list-details-services {
+  margin-top: 50px;
+  margin-bottom: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.price-list-details-services-container {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+
+.price-list-details-services-item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.price-list-details-services-name {
+  color: #8A94A6;
+  font-weight: 700;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.price-list-details-services-name-notice {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.price-list-details-services-time {
+  font-size: 15px;
+}
+
+.price-list-details-services-description {
+  font-size: 15px;
+}
+
+.price-list-details-services-price {
+  color: #8A94A6;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.price-list-addition-info {
+  font-size: 15px;
+}
+
 /*
 */
 
-  iframe{
-    max-width: 100%;
-  }
-  .button{
-    margin-left: 30px;
-    margin-right: 30px;
-    max-width: 300px;
-    margin: auto;
-  }
-  .button-model-1:hover,
-  .button-model-2:hover{
-    cursor: pointer;
-  }
-  /*.button-model-1 và .button-model-2 khác nhau về màu thôi
-  */
-  .button-model-1{
-    background-color: #ff0041;
-    border-radius: 5px;
-    color: #FFFFFF;
-    text-align: center;
-    margin: auto;
-    max-width: 300px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 21px;
-    vertical-align: middle;
-  }
-  .button-model-2{
-    background-color: #ff0041;
-    border-radius: 5px;
-    color: #FFFFFF;
-    text-align: center;
-    margin: auto;
-    max-width: 300px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 21px;
-    vertical-align: middle;
-  }
+iframe {
+  max-width: 100%;
+}
 
-  /*Các yếu tố chung cho màn hình đầu tiên
-  */
-  .first-screen-block{
-    position: relative;
-    line-height: 1.32;
-  }
-  .first-screen-block-anh{
-    margin: auto;
-    text-align: center;
-    border-radius: 0px;
-  }
-  .first-screen-block-title{
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    font-size: 34px;
-    font-style: italic;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    color: #FFFFFF;
+.button {
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 300px;
+  margin: auto;
+}
 
-  }
+.button-model-1:hover,
+.button-model-2:hover {
+  cursor: pointer;
+}
 
-  /*Các list dịch vụ mà ko hiển thị
+/*.button-model-1 và .button-model-2 khác nhau về màu thôi
   */
-  .services-list-4,
-  .services-list-6,
-  .services-list-7,
-  .customer-review{
-    display: none;
-  }
-  /*Các list dịch vụ hiển thị cần phải cách nhau 1 khoảng
+.button-model-1 {
+  background-color: #ff0041;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: auto;
+  max-width: 300px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+.button-model-2 {
+  background-color: #ff0041;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: auto;
+  max-width: 300px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+/*Các yếu tố chung cho màn hình đầu tiên
+  */
+.first-screen-block {
+  position: relative;
+  line-height: 1.32;
+}
+
+.first-screen-block-anh {
+  margin: auto;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.first-screen-block-title {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 34px;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  color: #FFFFFF;
+}
+
+/*Các list dịch vụ mà ko hiển thị
+  */
+.services-list-4,
+.services-list-6,
+.services-list-7,
+.customer-review{
+  display: none;
+}
+
+/*Các list dịch vụ hiển thị cần phải cách nhau 1 khoảng
   và phải có khoảng cách với bên dưới
   */
-  .service-container{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-  }
-  
+.service-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
 
 /*
 3. Phần chế độ hiển thị cho: 
@@ -271,790 +301,877 @@
   Tablet
   Desktop
 */
-  /*Chế độ Mobile
+/*Chế độ Mobile
   */
-  @media screen and (max-width: 480px){
-    /*Trang Home
+@media screen and (max-width: 480px) {
+
+  /*Trang Home
     */
-      /* index.js
+  /* index.js
       */
-        .page-desktop-top-bar,
-        .page-desktop-nav-bar,
-        .page-desktop-content,
-        .page-desktop-footer,
-        .page-tablet-top-bar,
-        .page-tablet-nav-bar,
-        .page-tablet-content,
-        .page-tablet-footer {
-          display: none;
-        }
-    /*Nút Learn more
+  .page-desktop-top-bar,
+  .page-desktop-nav-bar,
+  .page-desktop-content,
+  .page-desktop-footer,
+  .page-tablet-top-bar,
+  .page-tablet-nav-bar,
+  .page-tablet-content,
+  .page-tablet-footer {
+    display: none;
+  }
+
+  /*Nút Learn more
     */
-      /*button-1.js
+  /*button-1.js
       */
-      .learn-more-button-to-desktop,
-      .button-view-details-service-1-to-desktop,
-      .button-view-details-service-2-to-desktop,
-      .button-view-details-service-3-to-desktop,
-      .button-view-details-service-4-to-desktop,
-      .button-view-details-service-5-to-desktop,
-      .button-view-details-service-6-to-desktop,
-      .button-view-details-service-7-to-desktop {
-        display: none;
-      }
-      .learn-more-button-to-tablet,
-      .button-view-details-service-1-to-tablet,
-      .button-view-details-service-2-to-tablet,
-      .button-view-details-service-3-to-tablet,
-      .button-view-details-service-4-to-tablet,
-      .button-view-details-service-5-to-tablet,
-      .button-view-details-service-6-to-tablet,
-      .button-view-details-service-7-to-tablet {
-        display: none;
-      }
-    
-    /*Màn hình đầu tiên, giao diện mobile, cho chữ và nút lên trên ảnh, trên 1 chút so với đáy
+  .learn-more-button-to-desktop,
+  .button-view-details-service-1-to-desktop,
+  .button-view-details-service-2-to-desktop,
+  .button-view-details-service-3-to-desktop,
+  .button-view-details-service-4-to-desktop,
+  .button-view-details-service-5-to-desktop,
+  .button-view-details-service-6-to-desktop,
+  .button-view-details-service-7-to-desktop {
+    display: none;
+  }
+
+  .learn-more-button-to-tablet,
+  .button-view-details-service-1-to-tablet,
+  .button-view-details-service-2-to-tablet,
+  .button-view-details-service-3-to-tablet,
+  .button-view-details-service-4-to-tablet,
+  .button-view-details-service-5-to-tablet,
+  .button-view-details-service-6-to-tablet,
+  .button-view-details-service-7-to-tablet {
+    display: none;
+  }
+
+  /*Màn hình đầu tiên, giao diện mobile, cho chữ và nút lên trên ảnh, trên 1 chút so với đáy
     */
-    .first-screen-block-bottom{
-      position: absolute;
-      bottom: 8px;
-    }
-  
+  .first-screen-block-bottom {
+    position: absolute;
+    bottom: 8px;
+  }
+
   /*Trang About
   */
-  
-  }
-  /*Chế độ Tablet
-  */
-  @media screen and (min-width: 481px) and (max-width: 1024px){
-    /*Trang Home
-    */
-      /* index.js
-      */
-      .page-desktop-top-bar,
-      .page-desktop-nav-bar,
-      .page-desktop-content,
-      .page-desktop-footer,
-      .page-mobile-top-bar,
-      .page-mobile-nav-bar,
-      .page-mobile-content,
-      .page-mobile-footer {
-        display: none;
-      }
-    /*Nút Learn more
-    */
-      /*button-1.js
-      */
-      .learn-more-button-to-desktop,
-      .button-view-details-service-1-to-desktop,
-      .button-view-details-service-2-to-desktop,
-      .button-view-details-service-3-to-desktop,
-      .button-view-details-service-4-to-desktop,
-      .button-view-details-service-5-to-desktop,
-      .button-view-details-service-6-to-desktop,
-      .button-view-details-service-7-to-desktop {
-        display: none;
-      }
-      .learn-more-button-to-mobile,
-      .button-view-details-service-1-to-mobile,
-      .button-view-details-service-2-to-mobile,
-      .button-view-details-service-3-to-mobile,
-      .button-view-details-service-4-to-mobile,
-      .button-view-details-service-5-to-mobile,
-      .button-view-details-service-6-to-mobile,
-      .button-view-details-service-7-to-mobile {
-        display: none;
-      }
-    /*Màn hình đầu tiên, giao diện tablet, cho chữ và nút lên trên ảnh, trên 1 chút so với đáy, và để về bên trái
-    */
-    .first-screen-block-bottom{
-      position: absolute;
-      bottom: 8px;
-      margin-left: 20px;
-      margin-right: 20px;
-      text-align: center;
-    }
 
-    /*Hiển thị danh sách dịch vụ ở trang homepage, giao diện tablet, chia 2 cột
+}
+
+/*Chế độ Tablet
+  */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+  /*Trang Home
     */
-    .homepage-tablet-services{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    /*Hiển thị danh sách các dịch vụ trong trang service, màn hình tablet, 
+  /* index.js
+      */
+  .page-desktop-top-bar,
+  .page-desktop-nav-bar,
+  .page-desktop-content,
+  .page-desktop-footer,
+  .page-mobile-top-bar,
+  .page-mobile-nav-bar,
+  .page-mobile-content,
+  .page-mobile-footer {
+    display: none;
+  }
+
+  /*Nút Learn more
+    */
+  /*button-1.js
+      */
+  .learn-more-button-to-desktop,
+  .button-view-details-service-1-to-desktop,
+  .button-view-details-service-2-to-desktop,
+  .button-view-details-service-3-to-desktop,
+  .button-view-details-service-4-to-desktop,
+  .button-view-details-service-5-to-desktop,
+  .button-view-details-service-6-to-desktop,
+  .button-view-details-service-7-to-desktop {
+    display: none;
+  }
+
+  .learn-more-button-to-mobile,
+  .button-view-details-service-1-to-mobile,
+  .button-view-details-service-2-to-mobile,
+  .button-view-details-service-3-to-mobile,
+  .button-view-details-service-4-to-mobile,
+  .button-view-details-service-5-to-mobile,
+  .button-view-details-service-6-to-mobile,
+  .button-view-details-service-7-to-mobile {
+    display: none;
+  }
+
+  /*Màn hình đầu tiên, giao diện tablet, cho chữ và nút lên trên ảnh, trên 1 chút so với đáy, và để về bên trái
+    */
+  .first-screen-block-bottom {
+    position: absolute;
+    bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  /*Hiển thị danh sách dịch vụ ở trang homepage, giao diện tablet, chia 2 cột
+    */
+  .homepage-tablet-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*Hiển thị danh sách các dịch vụ trong trang service, màn hình tablet, 
     services -> tablet-content.js
     Chia 2 cột
     */
-    .services-list{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background-color: #FFFFFF;
-    }
-    
-    /*Hiển thị footer màn hình tablet chia 2 cột
-    */
-    .footer-navigation{
-      margin-top: 40px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-    }
-      
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFFFFF;
   }
-  /*Chế độ Desktop
+
+  /*Hiển thị footer màn hình tablet chia 2 cột
+    */
+  .footer-navigation {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/*Chế độ Desktop
   */
-  @media screen and (min-width: 1025px){
-    
-    /*Trang Home
+@media screen and (min-width: 1025px) {
+
+  /*Trang Home
     */
-      /* index.js
+  /* index.js
       */
-      .page-tablet-top-bar,
-      .page-tablet-nav-bar,
-      .page-tablet-content,
-      .page-tablet-footer,
-      .page-mobile-top-bar,
-      .page-mobile-nav-bar,
-      .page-mobile-content,
-      .page-mobile-footer {
-        display: none;
-      }
-    /*Nút Learn more
+  .page-tablet-top-bar,
+  .page-tablet-nav-bar,
+  .page-tablet-content,
+  .page-tablet-footer,
+  .page-mobile-top-bar,
+  .page-mobile-nav-bar,
+  .page-mobile-content,
+  .page-mobile-footer {
+    display: none;
+  }
+
+  /*Nút Learn more
     */
-      /*button-1.js
+  /*button-1.js
       */
-      .learn-more-button-to-mobile,
-      .button-view-details-service-1-to-mobile,
-      .button-view-details-service-2-to-mobile,
-      .button-view-details-service-3-to-mobile,
-      .button-view-details-service-4-to-mobile,
-      .button-view-details-service-5-to-mobile,
-      .button-view-details-service-6-to-mobile,
-      .button-view-details-service-7-to-mobile {
-        display: none;
-      }
-      .learn-more-button-to-tablet,
-      .button-view-details-service-1-to-tablet,
-      .button-view-details-service-2-to-tablet,
-      .button-view-details-service-3-to-tablet,
-      .button-view-details-service-4-to-tablet,
-      .button-view-details-service-5-to-tablet,
-      .button-view-details-service-6-to-tablet,
-      .button-view-details-service-7-to-tablet {
-        display: none;
-      }
-      .dong-vien-content-anh{
-        display: none;
-      }
-    
-    /*Top Bar Desktop cho nút Call now vào giữa
+  .learn-more-button-to-mobile,
+  .button-view-details-service-1-to-mobile,
+  .button-view-details-service-2-to-mobile,
+  .button-view-details-service-3-to-mobile,
+  .button-view-details-service-4-to-mobile,
+  .button-view-details-service-5-to-mobile,
+  .button-view-details-service-6-to-mobile,
+  .button-view-details-service-7-to-mobile {
+    display: none;
+  }
+
+  .learn-more-button-to-tablet,
+  .button-view-details-service-1-to-tablet,
+  .button-view-details-service-2-to-tablet,
+  .button-view-details-service-3-to-tablet,
+  .button-view-details-service-4-to-tablet,
+  .button-view-details-service-5-to-tablet,
+  .button-view-details-service-6-to-tablet,
+  .button-view-details-service-7-to-tablet {
+    display: none;
+  }
+
+  .dong-vien-content-anh {
+    display: none;
+  }
+
+  /*Top Bar Desktop cho nút Call now vào giữa
     thongTinTiem2.callTiem
     thongTinTiem2.linkBookingTiem
     Chỉ cần mỗi cái wrapper này còn lại theo khuôn top-bar như thường
     */
-    .top-bar-wrapper{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    /*Màn hình đầu tiên, giao diện desktop, cho chữ và nút lên trên ảnh, ở giữa màn hình theo chiều dọc, và để về 1 nửa bên trái của màn hình
-    */
-    .first-screen-block-bottom{
-      position: absolute;
-      bottom: 10px;
-      left: 20px;
-      width: 50%;
-      height: 50%;
-    }
+  .top-bar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    /*Hiển thị danh sách các dịch vụ trong trang service, màn hình tablet, 
+  /*Màn hình đầu tiên, giao diện desktop, cho chữ và nút lên trên ảnh, ở giữa màn hình theo chiều dọc, và để về 1 nửa bên trái của màn hình
+    */
+  .first-screen-block-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 50%;
+    height: 50%;
+  }
+
+  /*Hiển thị danh sách các dịch vụ trong trang service, màn hình tablet, 
     services -> tablet-content.js
     Chia 2 cột
     */
-    .homepage-desktop-dong-vien{
-      max-width: 900px;
-      margin: auto;
-    }
+  .homepage-desktop-dong-vien {
+    max-width: 900px;
+    margin: auto;
+  }
 
-    /*Hiển thị danh sách dịch vụ ở trang homepage, giao diện tablet, chia 2 cột
+  /*Hiển thị danh sách dịch vụ ở trang homepage, giao diện tablet, chia 2 cột
     */
-    .homepage-desktop-services{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-    /*Hiển thị danh sách các dịch vụ trong trang service, màn hình desktop, 
+  .homepage-desktop-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*Hiển thị danh sách các dịch vụ trong trang service, màn hình desktop, 
     services -> desktop-content.js
     Chia 3 cột
     */
-    .services-list{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background-color: #FFFFFF;
-    }
-
-    .desktop-about-us-dong-vien-block-1,
-    .desktop-about-us-dong-vien-block-2,
-    .desktop-about-us-dong-vien-block-3{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .desktop-about-us-dong-vien-text{
-      margin: auto;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    /*Hiển thị footer màn hình desktop chia 2 cột
-    */
-    .footer-navigation{
-      margin-top: 40px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-    }
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFFFFF;
   }
-  
+
+  .desktop-about-us-dong-vien-block-1,
+  .desktop-about-us-dong-vien-block-2,
+  .desktop-about-us-dong-vien-block-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .desktop-about-us-dong-vien-text {
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  /*Hiển thị footer màn hình desktop chia 2 cột
+    */
+  .footer-navigation {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /*
 4. Phần các component cụ thể
 */
-  /*Đây là cho mobile content của trang chủ
+/*Đây là cho mobile content của trang chủ
   */
-    
 
-  /*Đây là cho thanh Bottom Nav Bar
-  */
-    /* mobile-bottom-nav-bar.js
-    */
-    .mobile-bottom-nav-bar-img{
-      max-width: 20px;
-      height: 20px;
-      margin: auto;
-      border-radius: 0px;
-    }
-    
-    .mobile-bottom-nav-bar{
-      text-align: center;
-      justify-content: space-between;
-      max-width: 100%;
-    }
-    .mobile-bottom-nav-bar-section{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      text-align: center;
-      justify-content: space-between;
-      margin: auto;  
-    }
-    .mobile-bottom-nav-bar-home,
-    .mobile-bottom-nav-bar-services,
-    .mobile-bottom-nav-bar-contact-us{
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-    .mobile-bottom-nav-bar-section-content{
-      color: #B0B7C3;
-      font-weight: 500;
-      font-size: 15px;
-    }
-    .mobile-bottom-nav-bar-link-a{
-      margin: auto;
-      font-weight: 500;
-      font-size: 21px;
-      text-decoration: none;
-      color: #B0B7C3;
-      font-size: 17px;
-      vertical-align: middle;
-    }
-  /*Thanh Mobile top bar 
-  */
-    /*mobile-top-bar.js
-    */
-    .top-bar{
-      background-color: #FFFFFF;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      display: flex;
-    }
-    .top-bar-item-left,
-    .top-bar-item-right{
-      background-color: #FFFFFF;
-      border: solid 1px #000000;
-      color: #000000;
-      font-weight: 500;
-      margin: auto;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-bottom: 3px;
-      padding-top: 3px;
-      border-radius: 5px;
-    }
-    .top-bar-right{
-      right: 10px;
-    }
-    .top-bar-item-spacer{
-      flex: 1;
-    }
-  /*Thanh nav bar, dùng chung cho cả 3 giao diện, nội dung của chúng chỉ khác nhau ở chỗ trỏ đến link id khác nhau để đảm bảo trải nghiệm trơn mượt khi chọn dịch vụ qua thanh nav bar
-  */
-    .nav-bar{
-      display: grid; 
-      grid-template-columns: 3fr 1fr;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-    }            
-    .nav-bar-menu{
-        margin: auto;
-        margin-right: 0px;
-        top: 0px;
-    }       
-    .nav-bar-link-a{
-        text-decoration: none;
-        color: #8A94A6;
-        font-weight: 500;
- 
-    }
-    .nav-bar-services-sub-category{
-        margin-top: 25px;
-    }
-    .nav-bar-services-sub-category-details{
-        text-decoration: none;
-        color: #B0B7C3;
-        font-weight: 500;
-        font-size: 21px;
-        margin-left: 15px;
-        margin-bottom: 10px;
-    }
-    .nav-bar-services{
-        margin-bottom: 20px;
-    }
-    .nav-bar-main-category{
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
-  
-  /*Logo trong thanh nav-bar
-  */
-    /* logo-nav.js
-    */
-    .logo-container{
-      display: flex;
-      text-decoration: none;
-    }
-    .logo-container:hover{
-      cursor: pointer;
-    }
-    .logo{
-      margin-bottom: 5px;
-      max-width: 50px;
-      padding-left: 0px;
-      margin-left: 0px;
-    }
-    .logo-text{
-      line-height: 15px;
-      margin: auto;
-      margin-left: 10px;
-    }
-    .logo-text-1{
-      letter-spacing: 4px;
-      font-size: 16px;
-      margin-bottom: 0px;
-      font-weight: 500;
-    }
-    .logo-text-2{
-      letter-spacing: 2px;
-      font-size: 11px;
-      margin-top: 0px;
-      font-weight: 700;
-    }
-  /*Phần Động Viên 1
-  */
-    /* dong-vien-1.js
-    */
-    .dong-vien{
-      background-color: #FFFFFF;
-      color: #8A94A6;
-      text-align: center;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      color: #8A94A6;
-      font-weight: 500;
-      
-      line-height: 2;
 
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-  
-  /*Phần Nhấn Mạnh 1
+/*Đây là cho thanh Bottom Nav Bar
   */
-    /* nhan-manh-1.js
+/* mobile-bottom-nav-bar.js
     */
-    .nhan-manh-1{
-      background-color: #000000;
-      color: #FFFFFF;
-      text-align: center;
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
-  /*Riêng Phần background của Nhấn Mạnh 2 
+.mobile-bottom-nav-bar-img {
+  max-width: 20px;
+  height: 20px;
+  margin: auto;
+  border-radius: 0px;
+}
+
+.mobile-bottom-nav-bar {
+  text-align: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.mobile-bottom-nav-bar-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.mobile-bottom-nav-bar-home,
+.mobile-bottom-nav-bar-services,
+.mobile-bottom-nav-bar-contact-us {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mobile-bottom-nav-bar-section-content {
+  color: #B0B7C3;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mobile-bottom-nav-bar-link-a {
+  margin: auto;
+  font-weight: 500;
+  font-size: 21px;
+  text-decoration: none;
+  color: #B0B7C3;
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+
+/*Thanh Mobile top bar 
   */
-    /*nhan-manh-2.js
+/*mobile-top-bar.js
+  */
+.top-bar {
+  background-color: #FFFFFF;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.top-bar-item-left,
+.top-bar-item-right {
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  color: #000000;
+  font-weight: 500;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+
+.top-bar-right {
+  right: 10px;
+}
+
+.top-bar-item-spacer {
+  flex: 1;
+}
+
+/*Thanh nav bar, dùng chung cho cả 3 giao diện, nội dung của chúng chỉ khác nhau ở chỗ trỏ đến link id khác nhau để đảm bảo trải nghiệm trơn mượt khi chọn dịch vụ qua thanh nav bar
+  */
+.nav-bar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.nav-bar-menu {
+  margin: auto;
+  margin-right: 0px;
+  top: 0px;
+}
+
+.nav-bar-link-main-menu {
+  text-decoration: none;
+  color: #8A94A6;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.nav-bar-link-service-category {
+  text-decoration: none;
+  color: #949aa5;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.nav-bar-services-sub-category-details {
+  text-decoration: none;
+  color: #B0B7C3;
+  font-weight: 500;
+  font-size: 21px;
+  margin-left: 15px;
+}
+
+.nav-bar-main-category {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/*Logo trong thanh nav-bar
+  */
+/* logo-nav.js
     */
-    .nhan-manh-2-background{
-      background-color: #FFFFFF;
-      padding-top: 10px;
-      padding-bottom: 15px;
-      padding-left: 20px;
-      padding-right: 20px;
-      background-image: url("/images/our-mission-480px.jpg");
-    }
-  /*Riêng Phần background của Nhấn Mạnh 3 
+.logo-container {
+  display: flex;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+.logo {
+  margin-bottom: 5px;
+  max-width: 60px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.logo-text {
+  line-height: 15px;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.logo-text-1 {
+  letter-spacing: 4px;
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.logo-text-2 {
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+/*Phần Động Viên 1
   */
-    /*nhan-manh-3.js
+/* dong-vien-1.js
     */
-    .nhan-manh-3-background{
-      background-color: #FFFFFF;
-      padding-top: 10px;
-      padding-bottom: 15px;
-      padding-left: 30px;
-      padding-right: 20px;
-    }
-  /*Chung Phần Nhấn Mạnh 2 3 
+.dong-vien {
+  background-color: #FFFFFF;
+  color: #8A94A6;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #8A94A6;
+  font-weight: 500;
+
+  line-height: 2;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*Phần description của động viên
+    */
+.dong-vien-description {
+  font-size: 20px;
+}
+
+/*Phần Nhấn Mạnh 1
   */
-    /* nhan-manh-2.js
+/* nhan-manh-1.js
+    */
+.nhan-manh-1 {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/*Riêng Phần background của Nhấn Mạnh 2 
+  */
+/*nhan-manh-2.js
+    */
+.nhan-manh-2-background {
+  background-color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("/images/our-mission-480px.jpg");
+}
+
+/*Riêng Phần background của Nhấn Mạnh 3 
+  */
+/*nhan-manh-3.js
+    */
+.nhan-manh-3-background {
+  background-color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+/*Chung Phần Nhấn Mạnh 2 3 
+  */
+/* nhan-manh-2.js
       nhan-manh-3.js
     */
-    .nhan-manh-content{
-      text-align: center;
-      background-color: #FFFFFF;
-      padding-top: 20px;
-      padding-bottom: 10px;
-    }
-    .nhan-manh-content-wrapper{
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .nhan-manh-content-header{
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      font-family: Alegreya Sans;
-    }
-    .nhan-manh-content-description{
-      font-family: Noto Sans;
-      margin-bottom: 15px;
-      font-size: 20px;
-    }
-  /*Phần Nhấn Mạnh 4
-  */
-    /* nhan-manh-4.js
-    */
-    .nhan-manh-4-background{
-      background-color: #bac4ce;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-  }
-    .nhan-manh-4-content-1{
-      text-align: center;
-      background-color: #FFFFFF;
-      padding-top: 30px;
-      margin-bottom: 30px;
-    }
-    .nhan-manh-4-content-1-wrapper{
-      margin: auto;
-  }
-    .nhan-manh-4-content-1-image{
-      margin: auto;
-    }
-    .nhan-manh-4-content-2-image{
-      margin-bottom: 30px;
-      margin: auto;
-    }
-    .nhan-manh-4-content-2-wrapper{
-      text-align: center;
-      background-color: #FFFFFF;
-      padding-top: 30px;
-    }
-    .nhan-manh-4-content-header-4{
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-family: Alegreya Sans;
-    }
-    .nhan-manh-4-content-description{
-      font-family: Noto Sans;
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-    .nhan-manh-4-content-1-wrapper{
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .nhan-manh-4-content-wrapper{
-      background-color: #F7F7F7;
-      padding-top: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 10px;
-    }
-    .nhan-manh-4-content-header{
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-family: Alegreya Sans;
-    }
-    .nhan-manh-4-content-description{
-      font-family: Noto Sans;
-    }
-  /*Phần Location của tiệm
-  */
-    /* location.js
-    */
-    .location{
-      padding-bottom: 30px;
-      background-color: #FFFFFF;
-    }
-    .location-image{
-      margin-bottom: 30px;
-    }
-    .location-title{
-      text-align: center;
-      margin-bottom: 20px;
-      font-family: Inter;
-      font-size: 30px;
-      font-weight: 700;
-      color: #000000;
-    }
-    .location-header{
-      text-align: center;
-      margin-bottom: 10px;
-      font-family: Inter;
-      font-size: 25px;
-      font-weight: 700;
-      color: #000000;
-    }
-    .phone-tiem{
-      color: #000000;
-      font-weight: 700;
-    }
-    .location-text{
-      margin-bottom: 30px;
-    }
-    .location-description{
-      text-align: center;
-      margin: 10px;
-      line-height: 1.6;
-      font-size: 20px;
-      font-family: Noto Sans;
-    }
-  /*Phần TimeSchedule Thời gian làm việc của tiệm
-  */
-    /*time-schedule.js
-    */
-    .time-schedule{
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      background-color: #FFFFFF;
-    }
-    .time-schedule-title{
-      text-align: center;
-      margin-bottom: 10px;
-      font-family: Inter;
-      font-size: 25px;
-      font-weight: 700;
-      color: #000000;
-    }
+.nhan-manh-content {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 
-    .time-schedule-description{
-      text-align: center;
-      margin: 10px;
-      line-height: 1.6;
-      font-size: 20px;
-      font-family: Noto Sans;
-    }
-  /*Phần Offer của tiệm
-  */
-    /*offers.js
-    */
-    .offers{
-      margin-top: 30px;
-      margin-bottom: 100px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .offers-content-anh{
-      max-width: 100%;
-      border-radius: 30px;
-      text-align: center;
-      margin: auto;
-    }
-    .title-1{
-      font-family: Inter;
-      font-size: 40px;
-      color: #000000;
-      margin-bottom: 0px;
-    }
-    .offers-title{
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    .offers-heading{
-      font-size: 25px;
-      text-align: center;
-      margin-bottom: 10px;
-      margin-top: 30px;
-    }
-    .offers-description{
-      
-      margin: 10px;
-      margin-bottom: 100px;
-      color: #8A94A6;
-      line-height: 1.6;
-      font-size: 20px;
-      letter-spacing: 1px;
-    }
-    .offers-divider{
-      margin-top: 35px;
-      margin-bottom: 50px;
-      margin-left: 30px;
-      margin-right: 30px;
-      color: #FF0041;
-    }
-  /*Phần Customer Review của tiệm
-  */
-    /* customer-review.js
-    */
-    .customer-review{
-      background-color: #FFFFFF;
-      padding-bottom: 30px;
-      padding-top: 30px;
-      margin-bottom: 50px;
-    }
-    .customer-review-title-1{
-      font-family: Inter;
-      font-size: 35px;
-      color: #000000;
-      font-weight: 700;
-      margin-bottom: 0px;
-      margin-left: 10px;  
-      margin-right: 10px;                   
-    }
-    .customer-review-title{
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    .customer-review-description{
-      text-align: center;
-      margin: 10px;
-      color: #8A94A6;
-      line-height: 1.6;
-      font-size: 20px;
-      font-style: italic;
-      letter-spacing: 1px;
-    }
-  /*Phần content của our-policy
-  */
-    /*content-our-policy.js
-    */
-    .content-our-policy{
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .content-heading-h1{
-      font-size: 30px;
-      font-weight: 700;
-      text-align: center;
-    }
-    .content-block{
-      margin-bottom: 20px;
-    }
-    .content-heading-h2{
-      font-size: 20px;
-      font-weight: 500;
-    }
-    .content-description-link-a{
-      font-size: 16px;
-      color: #000000;
-    }
-  /*Phần Footer
-  */
-    /*footer
-    */
-    .footer-image{
-      max-width: 20px;
-    }
-    .footer{
-      margin-top: 50px;
-      margin-bottom: 100px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .divider{
-      color: #EC5598;
-    }
-    .footer-navigation-item{
-      color: #424A59;
-      font-weight: 500;
-      font-size: 20px;
-      margin-top: 20px;
-      text-decoration: none;
-    }
-    .footer-navigation-services-detail-services,
-    .footer-navigation-item-detail-services,
-    .footer-navigation-item-details{
-      margin-top: 15px;
-      margin-left: 10px;
-      color: #8C96A8;
-      font-weight: 500;
-      font-size: 19px;
-      text-decoration: none;
-    }
-    .footer-navigation-item-details-1,
-    .footer-navigation-item-details-2{
-      display: flex;
-      margin-bottom: 15px;
-    }
-    .footer-navigation-item-details-1:hover,
-    .footer-navigation-item-details-2:hover,
-    .footer-copyright:hover{
-      cursor: pointer;
-    }
+.nhan-manh-content-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-    .footer-copyright{
-      margin-top: 100px;
-      margin-bottom: 10px;
-      color: #96A0AF;
-      font-weight: 500;
-      font-size: 20px;
-      text-decoration: none;
-    } 
-  /*Phần Our Story, chủ yếu dùng trong trang About
-  */
-  /*our-story.js
-  */
-  .our-story-block,
-  .contact-us-block{
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 50px;
-  }
-  .our-story-description{
-    color: #8A94A6;
-    font-weight: 500;
-    margin-bottom: 50px;
-    line-height: 2;
-  }
+.nhan-manh-content-header {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: Alegreya Sans;
+}
 
-  /*Phần Notification Bar - Thanh hiển thị thông báo, để ở trên đầu các trang
-  Nếu ko có thông báo gì thì ẩn đi
-  */
-  .page-notification-bar{
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #ff0041;
-  }
+.nhan-manh-content-description {
+  font-family: Noto Sans;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
 
-  
+/*Phần Nhấn Mạnh 4
+  */
+/* nhan-manh-4.js
+    */
+.nhan-manh-4-background {
+  background-color: #bac4ce;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.nhan-manh-4-content-1 {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nhan-manh-4-content-1-wrapper {
+  margin: auto;
+}
+
+.nhan-manh-4-content-1-image {
+  margin: auto;
+}
+
+.nhan-manh-4-content-2-image {
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+.nhan-manh-4-content-2-wrapper {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding-top: 30px;
+}
+
+.nhan-manh-4-content-header-4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans;
+}
+
+.nhan-manh-4-content-description {
+  font-family: Noto Sans;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.nhan-manh-4-content-1-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nhan-manh-4-content-wrapper {
+  background-color: #F7F7F7;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.nhan-manh-4-content-header {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: Alegreya Sans;
+}
+
+.nhan-manh-4-content-description {
+  font-family: Noto Sans;
+}
+
+/*Phần Location của tiệm
+  */
+/* location.js
+    */
+
+.location {
+  padding-bottom: 30px;
+  background-color: #FFFFFF;
+}
+
+.location-image {
+  margin-bottom: 30px;
+}
+
+.location-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.location-header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.phone-tiem {
+  color: #000000;
+  font-weight: 700;
+}
+
+.location-text {
+  margin-bottom: 30px;
+}
+
+.location-description {
+  text-align: center;
+  margin: 10px;
+  line-height: 1.6;
+  font-size: 20px;
+  font-family: Noto Sans;
+}
+
+/*Phần TimeSchedule Thời gian làm việc của tiệm
+  */
+/*time-schedule.js
+    */
+.time-schedule {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+}
+
+.time-schedule-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.time-schedule-description {
+  text-align: center;
+  margin: 10px;
+  line-height: 1.6;
+  font-size: 20px;
+  font-family: Noto Sans;
+}
+
+/*Phần Offer của tiệm
+  */
+/*offers.js
+    */
+.offers {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.offers-content-anh {
+  max-width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.title-1 {
+  font-family: Inter;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.offers-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.offers-heading {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.offers-description {
+
+  margin: 10px;
+  margin-bottom: 100px;
+  color: #8A94A6;
+  line-height: 1.6;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.offers-divider {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #FF0041;
+}
+
+/*Phần Customer Review của tiệm
+  */
+/* customer-review.js
+    */
+.customer-review {
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.customer-review-title {
+  text-align: center;
+  font-family: Inter;
+  font-size: 35px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.customer-review-carousel-image {
+  max-width: 100%;
+}
+
+.customer-review-description {
+  text-align: center;
+  margin: 10px;
+  color: #8A94A6;
+  line-height: 1.6;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/*Phần content của our-policy
+  */
+/*content-our-policy.js
+    */
+.content-our-policy {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content-heading-h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-block {
+  margin-bottom: 20px;
+}
+
+.content-heading-h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content-description-link-a {
+  font-size: 16px;
+  color: #000000;
+}
+
+/*Phần Footer
+  */
+/*footer
+    */
+.footer-image {
+  max-width: 20px;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.divider {
+  color: #23d1ff;
+}
+
+.footer-navigation-item {
+  color: #424A59;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.footer-navigation-services-detail-services,
+.footer-navigation-item-detail-services,
+.footer-navigation-item-details {
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #8C96A8;
+  font-weight: 500;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.footer-navigation-item-details-1,
+.footer-navigation-item-details-2 {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer-navigation-item-details-1:hover,
+.footer-navigation-item-details-2:hover,
+.footer-copyright:hover {
+  cursor: pointer;
+}
+
+.footer-copyright {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #96A0AF;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*Phần Our Story, chủ yếu dùng trong trang About
+  */
+/*our-story.js
+  */
+.our-story-block,
+.contact-us-block {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+
+.our-story-description {
+  color: #8A94A6;
+  font-weight: 500;
+  margin-bottom: 50px;
+  line-height: 2;
+  font-size: 20px;
+}

@@ -1,6 +1,7 @@
 import Button3 from '/pages/Components/buttons/button-3.js';
-import { thongTinTiem1 } from '/pages/core/info';
-import { thongTinTiem2 } from '/pages/core/info';
+import { processedBusinessOpeningTime } from '/pages/core/info';
+import { pageContent } from '/pages/core/info';
+
 
 export default function TimeSchedule(){
     return(
@@ -8,23 +9,23 @@ export default function TimeSchedule(){
             <div className="time-schedule">
                 <div className="time-schedule-text">
                     <div className="time-schedule-title">
-                        {thongTinTiem2.timeScheduleHeading}
+                        {pageContent.timeScheduleHeading}
                     </div>
                     <div className="time-schedule-description">
                             <div className="time-schedule-description">
-                                {thongTinTiem1.workingTimeMon}
+                                {processedBusinessOpeningTime.workingTimeMon}
                                 <br />
-                                {thongTinTiem1.workingTimeTue}
+                                {processedBusinessOpeningTime.workingTimeTue}
                                 <br />
-                                {thongTinTiem1.workingTimeWed}
+                                {processedBusinessOpeningTime.workingTimeWed}
                                 <br />
-                                {thongTinTiem1.workingTimeThu}
+                                {processedBusinessOpeningTime.workingTimeThu}
                                 <br />
-                                {thongTinTiem1.workingTimeFri}
+                                {processedBusinessOpeningTime.workingTimeFri}
                                 <br />
-                                {thongTinTiem1.workingTimeSat}
+                                {processedBusinessOpeningTime.workingTimeSat}
                                 <br />
-                                {thongTinTiem1.workingTimeSun}
+                                {processedBusinessOpeningTime.workingTimeSun}
                             </div>   
                     </div>
                 </div>

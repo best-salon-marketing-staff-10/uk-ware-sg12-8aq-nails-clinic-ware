@@ -1,26 +1,23 @@
 import Link from "next/link";
-import { thongTinTiem1 } from '/pages/core/info';
-import { thongTinTiem2 } from '/pages/core/info';
+import { changedInfo } from '/pages/core/info';
 
 export default function LogoNav(){
 
     return(
         <>
-            <Link href="/" legacyBehavior>
+            <Link legacyBehavior href="/">
                 <div className="logo-container">
-                    
                     <div className="logo">
-                        <img className="logo"src={thongTinTiem1.logoTiem} />
+                        <img className="logo"src={changedInfo.businessLogo} />
                     </div>
                     <div className="logo-text">
-                        <div className="logo-text-1">
-                            {thongTinTiem1.tenTiem}
-                        </div>
+                        <h2 className="logo-text-1">
+                            {changedInfo.businessName}
+                        </h2>
                         <div className="logo-text-2">
-                            {thongTinTiem1.areaTiem}, {thongTinTiem1.cityTiem}
+                            {changedInfo.businessAddressLevel2}, {changedInfo.businessAddressLevel3}
                         </div>
                     </div>
-                    
                 </div>
             </Link>
             <style>{`

@@ -1,14 +1,7 @@
-import { thongTinTiem1 } from '/pages/core/info';
-import { thongTinTiem2 } from '/pages/core/info';
-import { serviceList1 } from '/pages/core/info';
-import { serviceList2 } from '/pages/core/info';
-import { serviceList3 } from '/pages/core/info';
-import { serviceList4 } from '/pages/core/info';
 import { serviceList5 } from '/pages/core/info';
-import { serviceList6 } from '/pages/core/info';
 
-export default function Service5PriceList(){
-    return(
+export default function Service5PriceList() {
+    return (
         <>
             <div className="service-list-5">
                 <div className="price-list-details-services">
@@ -19,7 +12,7 @@ export default function Service5PriceList(){
                                     {serviceList5.service4}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -35,10 +28,10 @@ export default function Service5PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList5.service4Price}
+                                £{serviceList5.service4Price}
                             </span>
                         </div>
                     </div>

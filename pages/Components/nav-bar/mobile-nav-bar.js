@@ -6,17 +6,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ButtonFullListOfOurServices from '/pages/Components/buttons/button-full-list-of-our-services.js';
-import { NavDropdown } from 'react-bootstrap';
 import LogoNav from '/pages/Components/logo-nav/logo-nav';
-import { thongTinTiem1 } from '/pages/core/info';
-import { thongTinTiem2 } from '/pages/core/info';
+import { menu } from '/pages/core/info';
+import { serviceCategory } from '/pages/core/info';
 
 
-export default function MobileNavBar(){
-    return(
+export default function MobileNavBar() {
+    return (
         <>
             <Head>
-                
+
             </Head>
             <div className="nav-bar">
                 <LogoNav />
@@ -26,106 +25,130 @@ export default function MobileNavBar(){
                             <Navbar.Brand href="#"></Navbar.Brand>
                             <Navbar.Toggle aria-controls="offcanvasNavbar" />
                             <Navbar.Offcanvas
-                            id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel"
-                            placement="end"
+                                id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel"
+                                placement="end"
                             >
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id="offcanvasNavbarLabel">
-                                    <Link href="/" legacyBehavior>
-                                        <LogoNav />
-                                    </Link>
-                                </Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <div className="nav-bar-main-category">
-                                        <Link href={thongTinTiem1.linkTomainMenu1} className="nav-bar-link-a">
-                                                {thongTinTiem1.mainMenu1}
+                                <Offcanvas.Header closeButton>
+                                    <Offcanvas.Title id="offcanvasNavbarLabel">
+                                        <Link legacyBehavior href="/">
+                                            <LogoNav />
                                         </Link>
-                                    </div>
-                                    <div className="nav-bar-main-category">
-                                        <Link href={thongTinTiem1.linkTomainMenu4} className="nav-bar-link-a">
-                                                {thongTinTiem1.mainMenu4}
-                                        </Link>
-                                        <div className="nav-bar-services-sub-category">
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-1">
-                                                    <Link href={thongTinTiem1.linkTomainService1} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService1}
-                                                    </Link>
+                                    </Offcanvas.Title>
+                                </Offcanvas.Header>
+                                <Offcanvas.Body>
+                                    <Nav className="justify-content-end flex-grow-1 pe-3">
+                                        <div className="nav-bar-main-category">
+                                            <Link legacyBehavior href={menu.linkToMainMenu1}>
+                                                <a className="nav-bar-link-main-menu">
+                                                    {menu.mainMenu1}
+                                                </a>
+                                            </Link>
+                                        </div>
+                                        <div className="nav-bar-main-category">
+                                            <Link legacyBehavior href={menu.linkToMainMenu4}>
+                                                <a className="nav-bar-link-main-menu">
+                                                    {menu.mainMenu4}
+                                                </a>
+                                            </Link>
+                                            <div className="nav-bar-services-sub-category">
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-1">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory1}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory1}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-2">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory2}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory2}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-3">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory3}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory3}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-4">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory4}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory4}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-5">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory5}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory5}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-6">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory6}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory6}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-bar-services-sub-category-details">
+                                                    <div className="services-list-7">
+                                                        <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory7}>
+                                                            <a className="nav-bar-link-service-category">
+                                                                {serviceCategory.serviceCategory7}
+                                                            </a>
+                                                        </Link>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-2">
-                                                    <Link href={thongTinTiem1.linkTomainService2} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService2}
-                                                    </Link>
-                                                </div>
-                                            </div>    
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-3">
-                                                    <Link href={thongTinTiem1.linkTomainService3} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService3}
-                                                    </Link>
-                                                </div>
-                                            </div> 
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-4">
-                                                    <Link href={thongTinTiem1.linkTomainService4} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService4}
-                                                    </Link>
-                                                </div>
-                                            </div> 
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-5">
-                                                    <Link href={thongTinTiem1.linkTomainService5} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService5}
-                                                    </Link>
-                                                </div>
-                                            </div> 
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-6">
-                                                    <Link href={thongTinTiem1.linkTomainService6} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService6}
-                                                    </Link>
-                                                </div>
-                                            </div> 
-                                            <div className="nav-bar-services-sub-category-details">
-                                                <div className="services-list-7">
-                                                    <Link href={thongTinTiem1.linkTomainService7} className="nav-bar-link-a">
-                                                            {thongTinTiem1.mainService7}
-                                                    </Link>
-                                                </div>
-                                            </div> 
                                         </div>
-                                    </div>
-                                    <div className="nav-bar-main-category">
-                                        <Link href={thongTinTiem1.linkTomainMenu3} className="nav-bar-link-a">
-                                                {thongTinTiem1.mainMenu3}
-                                        </Link>
-                                    </div>
-                                    <div className="nav-bar-main-category">
-                                        <Link href={thongTinTiem1.linkTomainMenu2} className="nav-bar-link-a">
-                                                {thongTinTiem1.mainMenu2}
-                                        </Link>
-                                    </div>
-                                    <div className="nav-bar-main-category">
-                                        <Link href={thongTinTiem1.linkTomainMenu5} className="nav-bar-link-a">
-                                                {thongTinTiem1.mainMenu5}
-                                        </Link>
-                                    </div>
-                                    <div className="button">
-                                        <ButtonFullListOfOurServices />
-                                    </div>
-                                </Nav>
-                            </Offcanvas.Body>
+                                        <div className="nav-bar-main-category">
+                                            <Link legacyBehavior href={menu.linkToMainMenu3}>
+                                                <a className="nav-bar-link-main-menu">
+                                                    {menu.mainMenu3}
+                                                </a>
+                                            </Link>
+                                        </div>
+                                        <div className="nav-bar-main-category">
+                                            <Link legacyBehavior href={menu.linkToMainMenu2}>
+                                                <a className="nav-bar-link-main-menu">
+                                                    {menu.mainMenu2}
+                                                </a>
+                                            </Link>
+                                        </div>
+                                        <div className="nav-bar-main-category">
+                                            <Link legacyBehavior href={menu.linkToMainMenu5}>
+                                                <a className="nav-bar-link-main-menu">
+                                                    {menu.mainMenu5}
+                                                </a>
+                                            </Link>
+                                        </div>
+                                        <div className="button">
+                                            <ButtonFullListOfOurServices />
+                                        </div>
+                                    </Nav>
+                                </Offcanvas.Body>
                             </Navbar.Offcanvas>
                         </Container>
-                    </Navbar>        
+                    </Navbar>
                 </div>
             </div>
-            
+
             <style jsx>{`
                 
             `}</style>

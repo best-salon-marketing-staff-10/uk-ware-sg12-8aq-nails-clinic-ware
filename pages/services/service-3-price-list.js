@@ -1,14 +1,7 @@
-import { thongTinTiem1 } from '/pages/core/info';
-import { thongTinTiem2 } from '/pages/core/info';
-import { serviceList1 } from '/pages/core/info';
-import { serviceList2 } from '/pages/core/info';
 import { serviceList3 } from '/pages/core/info';
-import { serviceList4 } from '/pages/core/info';
-import { serviceList5 } from '/pages/core/info';
-import { serviceList6 } from '/pages/core/info';
 
-export default function Service3PriceList(){
-    return(
+export default function Service3PriceList() {
+    return (
         <>
             <div className="service-list-3">
                 <div className="price-list-details-services">
@@ -19,7 +12,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service20}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -35,10 +28,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service20Price}
+                                £{serviceList3.service20Price}
                             </span>
                         </div>
                     </div>
@@ -49,7 +42,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service24}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -65,10 +58,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service24Price}
+                                £{serviceList3.service24Price}
                             </span>
                         </div>
                     </div>
@@ -79,7 +72,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service23}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -95,10 +88,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service23Price}
+                                £{serviceList3.service23Price}
                             </span>
                         </div>
                     </div>
@@ -109,7 +102,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service25}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -125,10 +118,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service25Price}
+                                £{serviceList3.service25Price}
                             </span>
                         </div>
                     </div>
@@ -139,7 +132,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service22}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -155,10 +148,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service22Price}
+                                £{serviceList3.service22Price}
                             </span>
                         </div>
                     </div>
@@ -169,7 +162,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service26}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -185,10 +178,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service26Price}
+                                £{serviceList3.service26Price}
                             </span>
                         </div>
                     </div>
@@ -199,7 +192,7 @@ export default function Service3PriceList(){
                                     {serviceList3.service27}
                                 </span>
                                 <span className="price-list-details-services-name-notice">
-                                    
+
                                 </span>
                             </div>
                             <div className="price-list-details-services-time">
@@ -215,10 +208,10 @@ export default function Service3PriceList(){
                         </div>
                         <div className="price-list-details-services-price">
                             <span className="price-list-addition-info">
-                                
+
                             </span>
                             <span className="price-list-details-services-price">
-                               £{serviceList3.service27Price}
+                                £{serviceList3.service27Price}
                             </span>
                         </div>
                     </div>
