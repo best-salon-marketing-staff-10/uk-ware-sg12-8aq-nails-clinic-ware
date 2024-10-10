@@ -270,18 +270,20 @@ iframe {
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-  font-size: 34px;
-  font-style: italic;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: lighter;
+  font-weight: 500;
+  font-size: 35px;
+  -webkit-text-stroke-color: #FF0041;
+  -webkit-text-stroke-width: 1px;
   color: #FFFFFF;
 }
 
 /*Các list dịch vụ mà ko hiển thị
   */
+.desktop-about-us-carousel-image,
+.about-us-carousel-image,
 .services-list-4,
-.services-list-6,
 .services-list-7,
+.offers,
 .customer-review{
   display: none;
 }

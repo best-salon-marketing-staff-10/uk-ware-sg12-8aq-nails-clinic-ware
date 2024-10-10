@@ -76,7 +76,7 @@ const businessOpeningTimeInput = {
   friClosingTime: "18:30",
 
   satOpeningTime: "09:30",
-  satClosingTime: "18:00",
+  satClosingTime: "18:30",
 
   sunOpeningTime: "",
   sunClosingTime: "",
@@ -95,45 +95,45 @@ const processedBusinessOpeningTime = {
 }
 
 const changedInfo = {
-  businessName: "Radcliffe Nails and Spa",
-  businessAddressLevel1: "15 Deansgate",
-  businessAddressLevel2: "Radcliffe",
-  businessAddressLevel3: "Manchester",
+  businessName: "Nails Clinic Ware",
+  businessAddressLevel1: "82 High St",
+  businessAddressLevel2: "Ware",
+  businessAddressLevel3: "Hertfordshire",
   businessAddressLevel4: "England",
   businessCountry: "United Kingdom",
   businessGeoRegionCode: "GB",
 
   //Tra cứu tên thành phố trong https://www.geonames.org/GB/administrative-division-united-kingdom.html và điền vào mã code tương ứng
-  businessAddressDivisionCode: "MAN",
+  businessAddressDivisionCode: "HRT",
 
-  businessPostCode: "M26 2SH",
+  businessPostCode: "SG12 8AQ",
 
 
-  businessPhoneNumber: "07384565266",
+  businessPhoneNumber: "01920449970",
 
   //Website tiệm KO có dấu / ở cuối
-  businessWebsite: "https://radcliffenailsandspa.web.app",
+  businessWebsite: "https://nailsclinic.web.app",
 
   linkBookingMap: "",
-  linkBookingApp: "https://bit.ly/3WCJVUZ",
-  linkToMap: "https://maps.app.goo.gl/gfvoMTpRs8mgNw2G6",
+  linkBookingApp: "https://nailsclinicware.setmore.com/",
+  linkToMap: "https://maps.app.goo.gl/FZ8GLwLBJ9Q9jvkc8",
 
 
 
   //Mở Google Maps tiệm, zoom sát vào, chuột phải
-  geoLatitude: 53.55956779701575,
-  geoLongitude: -2.3246658559553284,
+  geoLatitude: 51.81120160353801,
+  geoLongitude: -0.03215460412882983,
 
-  //Code xác minh của website trên Google Search
+  //Code xác minh của website trên Google Search 
   metaGoogleSiteVerification: "8PY9C4tyFxx-C0abTprXegCqjI9VHTxWzt57enQ1cNc",
 
   //iframe map
-  iframeMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.9011465502945!2d-2.325940933839103!3d53.55953209480201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba50142d9fcbd%3A0x3b6ed2619122923e!2sRadcliffe%20Nails%20and%20Spa!5e0!3m2!1sen!2s!4v1715739588863!5m2!1sen!2s",
+  iframeMapLink: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d154.1704303119624!2d-0.03207332485348062!3d51.811150847670184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876271dd308c54d%3A0xb1d8d382ad40be87!2sNails%20Clinic%20Ware!5e0!3m2!1sen!2s!4v1728448152287!5m2!1sen!2s",
 
   // Các ảnh của tiệm
-  ogImage: "https://radcliffenailsandspa.web.app/images/desktop-nail-salon-happy-customer-1.jpg",
-  icon: "/icon-2.jpg",
-  businessLogo: "/logo.jpg",
+  ogImage: "https://nailsclinic.web.app/images/desktop-nail-salon-happy-customer-1.jpg",
+  icon: "/icon.jpg",
+  businessLogo: "/logo-1.jpg",
 }
 
 const menu = {
@@ -158,7 +158,7 @@ const serviceCategory = {
   serviceCategory3: "Regular",
   serviceCategory4: "Hair Wash massage with NuSkin",
   serviceCategory5: "Nail design",
-  serviceCategory6: "Waxing",
+  serviceCategory6: "Beauty",
   serviceCategory7: "Facial",
 
   mobileLinkToServiceCategory1: "/services#m-service-list-1",
@@ -433,13 +433,13 @@ const schemaInput = {
 
   schemaPriceRange: "££",
   //Cần đổi tên khách
-  schemaPersonReviewAuthorName: "Dorothy sheehan",
-  //Xem điểm review trung bình của tiệm là bao nhiêu   , 
-  schemaRatingValue: "5",
+  schemaPersonReviewAuthorName: "",
+  //Xem điểm review trung bình của tiệm là bao nhiêu 
+  schemaRatingValue: "",
   schemaBestRating: "5",
 
-  schemaGeoLatitude: 50.737739190260825,
-  schemaLongitude: -1.7809925652348297,
+  schemaGeoLatitude: 51.81120160353801,
+  schemaLongitude: -0.03215460412882983,
 
   schemaUrl: changedInfo.businessWebsite,
 
@@ -768,9 +768,9 @@ const images = {
   serviceList5Image4: "/images/nail-design-4.jpg",
   serviceList5Image5: "/images/nail-design-5.jpg",
 
-  serviceList6Image1: "/images/waxing-1.jpg",
-  serviceList6Image2: "/images/waxing-2.jpg",
-  serviceList6Image3: "/images/waxing-3.jpg",
+  serviceList6Image1: "/images/beauty-salon-1.jpg",
+  serviceList6Image2: "/images/beauty-salon-2.jpg",
+  serviceList6Image3: "/images/beauty-salon-3.jpg",
   serviceList6Image4: "",
   serviceList6Image5: "",
 
@@ -839,7 +839,7 @@ const images = {
 const serviceList1 = {
   service1: "Acrylic Fullset with normal nail polish",
   service1Time: "45 mins",
-  service1Price: "25",
+  service1Price: "28",
   service1Description: "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
 
   service2: "Acrylic Infill with normal nail polish",
@@ -849,42 +849,42 @@ const serviceList1 = {
 
   service3: "Acrylic Full Set with Shellac",
   service3Time: "45 mins",
-  service3Price: "35",
+  service3Price: "38",
   service3Description: "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
 
   service4: "Acrylic Infill with Shellac",
   service4Time: "35 mins",
-  service4Price: "27",
+  service4Price: "30",
   service4Description: "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
 
   service5: "Gel Powder Full Set with normal nail polish",
   service5Time: "45 mins",
-  service5Price: "30",
+  service5Price: "38",
   service5Description: "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
 
   service6: "Gel Powder Infill with normal nail polish",
   service6Time: "35 mins",
-  service6Price: "25",
+  service6Price: "30",
   service6Description: "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
 
   service7: "Full Set Pink & White",
   service7Time: "45 mins",
-  service7Price: "35",
+  service7Price: "45",
   service7Description: "",
 
   service8: "Infill Pink & White",
   service8Time: "45 mins",
-  service8Price: "30",
+  service8Price: "38",
   service8Description: "",
 
   service9: "Full Set Ombre",
   service9Time: "45 mins",
-  service9Price: "38",
+  service9Price: "40",
   service9Description: "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
 
   service10: "Infill Ombre",
   service10Time: "35 mins",
-  service10Price: "30",
+  service10Price: "33",
   service10Description: "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
 
   service11: "Full Set Colour Powder",
@@ -924,7 +924,7 @@ const serviceList1 = {
 
   service18: "Take off Powder",
   service18Time: "10 mins",
-  service18Price: "10",
+  service18Price: "15",
   service18Description: "Just take off",
 
   service19: "Take off Acrylic and Redone a Newset",
@@ -1039,7 +1039,7 @@ const serviceList1 = {
 
   service41: "Gel Powder Infill with Shellac",
   service41Time: "45 mins",
-  service41Price: "28",
+  service41Price: "40",
   service41Description: "",
 
   service42: "Acrylic Fullset with no color",
@@ -1107,23 +1107,34 @@ const serviceList1 = {
   service54Price: "27",
   service54Description: "",
 
+  service55: "Gel Powder Full Set with Shellac",
+  service55Time: "45 mins",
+  service55Price: "48",
+  service55Description: "",
+
+  service56: "Dipping Manicure",
+  service56Time: "60 mins",
+  service56Price: "38",
+  service56Decription: "",
+
+
 
 };
 
 const serviceList2 = {
   service1: "Nail shape with Shellac nails on hand",
   service1Time: "15 mins",
-  service1Price: "20",
+  service1Price: "25",
   service1Description: "",
 
   service2: "Nail shape with Shellac nails on feet",
   service2Time: "15 mins",
-  service2Price: "20",
+  service2Price: "25",
   service2Description: "",
 
   service3: "Manicure Shellac",
   service3Time: "25 mins",
-  service3Price: "25",
+  service3Price: "30",
   service3Description: "Manicures are a difficult art to master. No matter how great they look when finished, they seem to always chip within days, if not in a matter of hours. Enter the Gel nail manicure - a groundbreaking technique that uses gel polishes that get 'cured' under UV lights. The result? Shiny, strong nails for weeks and no drying time!",
 
   service4: "Pedicure Shellac",
@@ -1133,7 +1144,7 @@ const serviceList2 = {
 
   service5: "Gel Polish Manicure & Pedicure",
   service5Time: "1 hr 10 mins",
-  service5Price: "60",
+  service5Price: "67",
   service5Description: "Manicure includes massage, cuticle, shaping, file, polish and moisturiser. Pedicure includes scrub, dead skin, cuticle, massage, moisturise, shape, file and polish. Shellac pedicure and manicure lasts up to two weeks, it’s well worth the wait.",
 
   service6: "Take off shellac and Redone Gel Polish on Hand",
@@ -1148,7 +1159,7 @@ const serviceList2 = {
 
   service8: "Take off shellac",
   service8Time: "20 mins",
-  service8Price: "8",
+  service8Price: "10",
   service8Description: "Just take off shellac",
 
   service9: "Take off shellac and Redone Shellac with Base BIAB",
@@ -1160,7 +1171,7 @@ const serviceList2 = {
 const serviceList3 = {
   service1: "Manicure with normal polish",
   service1Time: "30 mins",
-  service1Price: "15",
+  service1Price: "17",
   service1Description: "A classic manicure is all you need to take great care of your hands and nails. Includes massage, cuticle, shaping, file, polish and moisturiser.",
 
   service2: "Pedicure with normal polish",
@@ -1175,7 +1186,7 @@ const serviceList3 = {
 
   service4: "Manicure & Pedicure with normal polish",
   service4Time: "1 hr 15 mins",
-  service4Price: "43",
+  service4Price: "40",
   service4Description: "Manicure includes massage, cuticle, shaping, file, polish and moisturiser. Pedicure includes scrub, dead skin, cuticle, massage, moisturise, shape, file and polish.",
 
   service5: "Men's Manicure & Pedicure",
@@ -1185,12 +1196,12 @@ const serviceList3 = {
 
   service6: "Shape & paint on hands",
   service6Time: "15 mins",
-  service6Price: "8",
+  service6Price: "15",
   service6Description: "",
 
   service7: "Shape & paint on toes",
   service7Time: "15 mins",
-  service7Price: "10",
+  service7Price: "15",
   service7Description: "",
 
   service8: "Smoothing Pedicure with normal polish",
@@ -1293,6 +1304,27 @@ const serviceList3 = {
   service27Price: "25",
   service27Description: "",
 
+  service28: "Deluxe Manicure",
+  service28Time: "40 mins",
+  service28Price: "25",
+  service28Description: "",
+
+  service29: "Deluxe Pedicure",
+  service29Time: "60 mins",
+  service29Price: "33",
+  service29Description: "",
+
+  service30: "Hot oil foot massage",
+  service30Time: "",
+  service30Price: "",
+  service30Description: "£1 per minute",
+
+  service31: "Deluxe Manicure & Pedicure",
+  service31Time: "1 hr 20 mins",
+  service31Price: "53",
+  service31Description: "",
+
+
 };
 
 const serviceList4 = {
@@ -1342,13 +1374,22 @@ const serviceList5 = {
   service4Price: "5",
   service4Description: "",
 
+  service5: "Bio Gel newset",
+  service5Time: "45 mins",
+  service5Price: "40",
+  service5Description: "Special design (marble, glitter, 3D effect,...)",
+
+  service6: "Bio Gel Refill",
+  service6Time: "40 mins",
+  service6Price: "30",
+  service6Description: "Special design (marble, glitter, 3D effect,...)",
 
 };
 
 const serviceList6 = {
   service1: "Eyebrow Shape",
   service1Time: "15 mins",
-  service1Price: "6",
+  service1Price: "10",
   service1Description: "",
 
   service2: "Lip waxing",
@@ -1373,32 +1414,32 @@ const serviceList6 = {
 
   service6: "Brazilian waxing",
   service6Time: "20 mins",
-  service6Price: "25",
+  service6Price: "30",
   service6Description: "",
 
   service7: "Hollywood waxing",
   service7Time: "20 mins",
-  service7Price: "30",
+  service7Price: "25",
   service7Description: "",
 
   service8: "Full leg waxing",
   service8Time: "20 mins",
-  service8Price: "30",
+  service8Price: "28",
   service8Description: "",
 
   service9: "Half leg waxing",
   service9Time: "15 mins",
-  service9Price: "20",
+  service9Price: "18",
   service9Description: "",
 
   service10: "Full arm waxing",
   service10Time: "20 mins",
-  service10Price: "25",
+  service10Price: "28",
   service10Description: "",
 
   service11: "Half arm waxing",
   service11Time: "15 mins",
-  service11Price: "15",
+  service11Price: "18",
   service11Description: "",
 
   service12: "Eye - Last Lift With Tinting",
@@ -1406,19 +1447,19 @@ const serviceList6 = {
   service12Price: "40",
   service12Description: "PATCH TEST 24 HOURS PRIOR",
 
-  service13: "Eyebrow tinting ",
+  service13: "Eyebrow tinting",
   service13Time: "20 mins",
-  service13Price: "6",
+  service13Price: "10",
   service13Description: "PATCH TEST 24 HOURS PRIOR",
 
   service14: "Eyebrow THREADING",
   service14Time: "15 mins",
-  service14Price: "8",
+  service14Price: "10",
   service14Description: "",
 
   service15: "Lip THREADING",
   service15Time: "15 mins",
-  service15Price: "6",
+  service15Price: "5",
   service15Description: "",
 
   service16: "Chin THREADING",
@@ -1430,6 +1471,47 @@ const serviceList6 = {
   service17Time: "30 mins",
   service17Price: "20",
   service17Description: "",
+
+  service18: "Full face THREADING",
+  service18Time: "20 mins",
+  service18Price: "25",
+  service18Description: "",
+
+  service19: "Eyelashes tinting",
+  service19Time: "15 mins",
+  service19Price: "15",
+  service19Description: "",
+
+  service20: "Full Set Eyelash Extensions",
+  service20Time: "30 mins",
+  service20Price: "50",
+  service20Description: "",
+
+  service21: "Infill Eyelash Extensions",
+  service21Time: "25 mins",
+  service21Price: "35",
+  service21Description: "",
+
+  service22: "Eyelash Extensions Removal",
+  service22Time: "20 mins",
+  service22Price: "15",
+  service22Description: "",
+
+  service23: "Full face waxing",
+  service23Time: "20 mins",
+  service23Price: "25",
+  service23Description: "",
+
+  service24: "Facial",
+  service24Time: "30 mins",
+  service24Price: "20",
+  service24Description: "",
+
+  service25: "French Bikini waxing",
+  service25Time: "25 mins",
+  service25Price: "15",
+  service25Description: "",
+
 };
 
 const serviceList7 = {

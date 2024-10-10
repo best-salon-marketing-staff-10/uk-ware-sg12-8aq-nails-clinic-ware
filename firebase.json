@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "radcliffenailsandspa",
+    "site": "nailsclinic",
     "public": "out",
     "ignore": [
       "firebase.json",
