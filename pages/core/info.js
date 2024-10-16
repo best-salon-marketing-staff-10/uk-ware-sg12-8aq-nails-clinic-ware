@@ -60,22 +60,22 @@ personReviewAuthorName
 */
 const businessOpeningTimeInput = {
   //Thời gian làm việc của tiệm
-  monOpeningTime: "09:30",
+  monOpeningTime: "09:00",
   monClosingTime: "18:30",
 
-  tueOpeningTime: "09:30",
+  tueOpeningTime: "09:00",
   tueClosingTime: "18:30",
 
-  wedOpeningTime: "09:30",
+  wedOpeningTime: "09:00",
   wedClosingTime: "18:30",
 
-  thuOpeningTime: "09:30",
+  thuOpeningTime: "09:00",
   thuClosingTime: "18:30",
 
-  friOpeningTime: "09:30",
+  friOpeningTime: "09:00",
   friClosingTime: "18:30",
 
-  satOpeningTime: "09:30",
+  satOpeningTime: "09:00",
   satClosingTime: "18:30",
 
   sunOpeningTime: "",
@@ -91,7 +91,7 @@ const processedBusinessOpeningTime = {
   workingTimeThu: "Thursday: " + businessOpeningTimeInput.thuOpeningTime + "–" + businessOpeningTimeInput.thuClosingTime,
   workingTimeFri: "Friday: " + businessOpeningTimeInput.friOpeningTime + "–" + businessOpeningTimeInput.friClosingTime,
   workingTimeSat: "Saturday: " + businessOpeningTimeInput.satOpeningTime + "–" + businessOpeningTimeInput.satClosingTime,
-  workingTimeSun: "Sunday: Closed" + businessOpeningTimeInput.sunOpeningTime + "" + businessOpeningTimeInput.sunClosingTime,
+  workingTimeSun: "Sunday/Bank holiday: Pre only booking" + businessOpeningTimeInput.sunOpeningTime + "" + businessOpeningTimeInput.sunClosingTime,
 }
 
 const changedInfo = {
@@ -1042,14 +1042,14 @@ const serviceList1 = {
   service41Price: "40",
   service41Description: "",
 
-  service42: "Acrylic Fullset with no color",
+  service42: "Acrylic Fullset without Polish",
   service42Time: "30 mins",
-  service42Price: "25",
+  service42Price: "30",
   service42Description: "",
 
-  service43: "Acrylic Infill with no color",
+  service43: "Acrylic Infill without Polish",
   service43Time: "25 mins",
-  service43Price: "18",
+  service43Price: "20",
   service43Description: "",
 
   service44: "Infill Colour Powder",
