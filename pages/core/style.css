@@ -321,8 +321,6 @@ iframe {
   text-align: center;
   font-weight: 500;
   font-size: 35px;
-  -webkit-text-stroke-color: #FF0041;
-  -webkit-text-stroke-width: 1px;
   color: #FFFFFF;
 }
 
@@ -815,7 +813,7 @@ iframe {
 /* nhan-manh-1.js
     */
 .nhan-manh-1 {
-  background-color: #000000;
+  background-color: #ff999f;
   color: #FFFFFF;
   text-align: center;
   padding-top: 2px;
@@ -882,7 +880,7 @@ iframe {
 /* nhan-manh-4.js
     */
 .nhan-manh-4-background {
-  background-color: #bac4ce;
+  background-color: #ffd3d6;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
