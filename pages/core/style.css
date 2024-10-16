@@ -61,15 +61,15 @@
 /*Chống copy nội dung trang, tải ảnh....
   */
 
-  html{
-    -youbkit-touch-callout: none; 
-    -youbkit-user-select: none;   
-    -moz-user-select: none; 
-    -ms-user-select: none;      
-    user-select: none;   
-  }
-    
-  /*
+html {
+  -youbkit-touch-callout: none;
+  -youbkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
   */
 img {
   display: block;
@@ -216,41 +216,90 @@ iframe {
 /*.button-model-1 và .button-model-2 khác nhau về màu thôi
   */
 .button-model-1 {
-  background-color: #ff0041;
-  border-radius: 5px;
-  color: #FFFFFF;
+  background-image: linear-gradient(0deg,
+      #cc9e09 0%,
+      #c79e09 8%,
+      #c49e07 17%,
+      #c2a008 25%,
+      #cea912 33%,
+      #dfba26 42%,
+      #dabd52 50%,
+      #e8c854 58%,
+      #f5d556 67%,
+      #ffde5c 75%,
+      #fcd031 83%,
+      #f2c007 92%,
+      #be9409 100%);
+  border-radius: 50px;
+  color: #000000;
   text-align: center;
   margin: auto;
-  max-width: 300px;
+  max-width: 250px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
   font-size: 21px;
   vertical-align: middle;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.background-button-model-2 {
+  background-image: linear-gradient(0deg,
+      #cc9e09 0%,
+      #c79e09 8%,
+      #c49e07 17%,
+      #c2a008 25%,
+      #cea912 33%,
+      #dfba26 42%,
+      #dabd52 50%,
+      #e8c854 58%,
+      #f5d556 67%,
+      #ffde5c 75%,
+      #fcd031 83%,
+      #f2c007 92%,
+      #be9409 100%);
+  border-radius: 50px;
+  max-width: 254px;
+  height: 50px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  padding-top: 1px;
 }
 
 .button-model-2 {
-  background-color: #ff0041;
-  border-radius: 5px;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: transparent;
   text-align: center;
   margin: auto;
-  max-width: 300px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 30px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  max-width: 250px;
+  padding: 9px;
   font-weight: 700;
   text-decoration: none;
-  font-size: 21px;
-  vertical-align: middle;
+  font-size: 20px;
+}
+
+.gradient-text{
+  background: linear-gradient(90deg,
+  #c7ad48 0%,
+  #d1b02e 18%,
+  #d6b11f 26%,
+  #d4b111 33%,
+  #d2ac04 39%,
+  #e6bb0f 44%,
+  #e8c22c 50%,
+  #e1c34c 56%,
+  #dec66e 61%,
+  #dfbe49 67%,
+  #e3ba26 74%,
+  #d8aa13 82%,
+  #be9409 100%); /* Áp dụng gradient cho chữ */
+  -webkit-background-clip: text; /* Chỉ áp dụng cho phần chữ */
+  background-clip: text;
 }
 
 /*Các yếu tố chung cho màn hình đầu tiên
@@ -284,7 +333,7 @@ iframe {
 .services-list-4,
 .services-list-7,
 .offers,
-.customer-review{
+.customer-review {
   display: none;
 }
 
