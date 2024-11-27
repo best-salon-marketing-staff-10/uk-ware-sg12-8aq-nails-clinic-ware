@@ -839,12 +839,12 @@ const images = {
 const serviceList1 = {
   service1: "Acrylic Fullset with normal nail polish",
   service1Time: "45 mins",
-  service1Price: "28",
+  service1Price: "30",
   service1Description: "Nail extensions help your hands shine by adding a little length to your natural nail. If you're ready for flawless, fierce nails, let the nail technicians at this salon lend their talent and artistry to your tips.",
 
   service2: "Acrylic Infill with normal nail polish",
   service2Time: "35 mins",
-  service2Price: "20",
+  service2Price: "23",
   service2Description: "Nail refills are recommended around 3 to 4 weeks from the date of the initial application. A quick nail refill is the best way to make the most of your nail extensions.",
 
   service3: "Acrylic Full Set with Shellac",
