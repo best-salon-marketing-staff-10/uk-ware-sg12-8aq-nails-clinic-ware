@@ -5,96 +5,7 @@ export default function Service6PriceList() {
         <>
             <div className="service-list-6">
                 <div className="price-list-details-services">
-                    <div className="price-list-details-services-container">
-                        <div className="price-list-details-services-item">
-                            <div className="price-list-details-services-name">
-                                <span className="price-list-details-services-name">
-                                    {serviceList6.service20}
-                                </span>
-                                <span className="price-list-details-services-name-notice">
-
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-time">
-                                <span className="price-list-details-services-time">
-                                    {serviceList6.service20Time}
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-description">
-                                <span className="price-list-details-services-description">
-                                    {serviceList6.service20Description}
-                                </span>
-                            </div>
-                        </div>
-                        <div className="price-list-details-services-price">
-                            <span className="price-list-addition-info">
-
-                            </span>
-                            <span className="price-list-details-services-price">
-                                £{serviceList6.service20Price}
-                            </span>
-                        </div>
-                    </div>
-                    <div className="price-list-details-services-container">
-                        <div className="price-list-details-services-item">
-                            <div className="price-list-details-services-name">
-                                <span className="price-list-details-services-name">
-                                    {serviceList6.service21}
-                                </span>
-                                <span className="price-list-details-services-name-notice">
-
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-time">
-                                <span className="price-list-details-services-time">
-                                    {serviceList6.service21Time}
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-description">
-                                <span className="price-list-details-services-description">
-                                    {serviceList6.service21Description}
-                                </span>
-                            </div>
-                        </div>
-                        <div className="price-list-details-services-price">
-                            <span className="price-list-addition-info">
-
-                            </span>
-                            <span className="price-list-details-services-price">
-                                £{serviceList6.service21Price}
-                            </span>
-                        </div>
-                    </div>
-                    <div className="price-list-details-services-container">
-                        <div className="price-list-details-services-item">
-                            <div className="price-list-details-services-name">
-                                <span className="price-list-details-services-name">
-                                    {serviceList6.service22}
-                                </span>
-                                <span className="price-list-details-services-name-notice">
-
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-time">
-                                <span className="price-list-details-services-time">
-                                    {serviceList6.service22Time}
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-description">
-                                <span className="price-list-details-services-description">
-                                    {serviceList6.service22Description}
-                                </span>
-                            </div>
-                        </div>
-                        <div className="price-list-details-services-price">
-                            <span className="price-list-addition-info">
-
-                            </span>
-                            <span className="price-list-details-services-price">
-                                £{serviceList6.service22Price}
-                            </span>
-                        </div>
-                    </div>
+                    
                     <div className="price-list-details-services-container">
                         <div className="price-list-details-services-item">
                             <div className="price-list-details-services-name">
@@ -482,36 +393,6 @@ export default function Service6PriceList() {
                             </span>
                             <span className="price-list-details-services-price">
                                 £{serviceList6.service18Price}
-                            </span>
-                        </div>
-                    </div>
-                    <div className="price-list-details-services-container">
-                        <div className="price-list-details-services-item">
-                            <div className="price-list-details-services-name">
-                                <span className="price-list-details-services-name">
-                                    {serviceList6.service19}
-                                </span>
-                                <span className="price-list-details-services-name-notice">
-
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-time">
-                                <span className="price-list-details-services-time">
-                                    {serviceList6.service19Time}
-                                </span>
-                            </div>
-                            <div className="price-list-details-services-description">
-                                <span className="price-list-details-services-description">
-                                    {serviceList6.service19Description}
-                                </span>
-                            </div>
-                        </div>
-                        <div className="price-list-details-services-price">
-                            <span className="price-list-addition-info">
-
-                            </span>
-                            <span className="price-list-details-services-price">
-                                £{serviceList6.service19Price}
                             </span>
                         </div>
                     </div>
