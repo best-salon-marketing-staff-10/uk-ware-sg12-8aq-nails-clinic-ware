@@ -15,7 +15,7 @@ export default function LogoNav(){
                             {changedInfo.businessName}
                         </h2>
                         <div className="logo-text-2">
-                            {changedInfo.businessAddressLevel2}, {changedInfo.businessAddressLevel3}
+                        Stanstead Abbotts, {changedInfo.businessAddressLevel2}, {changedInfo.businessAddressLevel3}
                         </div>
                     </div>
                 </div>

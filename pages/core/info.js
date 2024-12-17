@@ -95,7 +95,7 @@ const processedBusinessOpeningTime = {
 }
 
 const changedInfo = {
-  businessName: "Nails Clinic Ware",
+  businessName: " Nails Clinic Stanstead Abbotts",
   businessAddressLevel1: "82 High St",
   businessAddressLevel2: "Ware",
   businessAddressLevel3: "Hertfordshire",
